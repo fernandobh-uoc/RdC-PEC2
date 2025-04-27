@@ -1,0 +1,3143 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/fernandobh/intelligentTourismOntology" ],
+    "title" : {
+      "undefined" : "Intelligent Tourism and Recommendations Ontology"
+    },
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "author" : [ "fernandobh@uoc.edu" ],
+    "description" : {
+      "undefined" : "This ontology models the domain of smart tourism by integrating information about events, attractions, hotels, restaurants, and means of transportation within the context of Spanish cities."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "fernandobh@uoc.edu",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-04-28",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "Ontology for intelligent tourism and recommendations.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Intelligent Tourism and Recommendations Ontology",
+        "type" : "label"
+      } ],
+      "introduction" : [ {
+        "identifier" : "introduction",
+        "language" : "en",
+        "value" : "This is the documentation for the generated ontology assignment in subject \"Representacion del conocimiento\" at UOC.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "13",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Recommendation",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommendation"
+    },
+    "subClasses" : [ "2", "3", "4", "5", "6" ],
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "9",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "13",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#SaborRestaurant",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SaborRestaurant",
+      "en" : "SaborRestaurant"
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Transport",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://schema.org/TravelAction",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://schema.org/Vehicle",
+        "type" : "label"
+      } ],
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Transport",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Transport",
+      "en" : "Transport"
+    },
+    "intersection" : [ "18" ],
+    "comment" : {
+      "en" : "Transport (in British English), or transportation (in American English), is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipeline, and space."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RecommendedRestaurant",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedRestaurant"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RecommendedAttraction",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedAttraction"
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#HotelRating",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelRating",
+      "en" : "HotelRating"
+    },
+    "intersection" : [ "38" ],
+    "comment" : {
+      "en" : "This class represents a numeric rating given to a hotel instance."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "37",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RoyalHotel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoyalHotel",
+      "en" : "RoyalHotel"
+    },
+    "id" : "39",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#DeliciaRestaurant",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeliciaRestaurant",
+      "en" : "DeliciaRestaurant"
+    },
+    "id" : "49",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#ConcertEvent",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Concert",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConcertEvent",
+      "en" : "ConcertEvent"
+    },
+    "comment" : {
+      "en" : "A concert is a live music performance in front of an audience. The performance may be by a single musician, sometimes then called a recital, or by a musical ensemble, such as an orchestra, choir, or band."
+    },
+    "id" : "50",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#AttractionRating",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttractionRating",
+      "en" : "AttractionRating"
+    },
+    "intersection" : [ "38" ],
+    "comment" : {
+      "en" : "This class represents a numeric rating given to an attraction (point of interest) instance."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "52",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#CastleAttraction",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Castle",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CastleAttraction",
+      "en" : "CastleAttraction"
+    },
+    "comment" : {
+      "en" : "A castle is a type of fortified structure built during the Middle Ages predominantly by the nobility or royalty and by military orders."
+    },
+    "id" : "53",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RestaurantRating",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestaurantRating",
+      "en" : "RestaurantRating"
+    },
+    "intersection" : [ "38" ],
+    "comment" : {
+      "en" : "This class represents a numeric rating given to a restaurant instance."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "55",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#DomainThing",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DomainThing"
+    },
+    "subClasses" : [ "0", "38", "64", "65", "66", "67", "68", "69", "70", "18", "36" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RecommendedEvent",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedEvent"
+    },
+    "id" : "6",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#FusionRestaurant",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FusionRestaurant",
+      "en" : "FusionRestaurant"
+    },
+    "id" : "78",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TourismEntity",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TourismEntity",
+      "en" : "TourismEntity"
+    },
+    "subClasses" : [ "17", "54", "16", "40", "51" ],
+    "comment" : {
+      "en" : "The class TourismEntity acts as a superclass for any kind of activity, event, place of interest or transportation medium that is subject to recommendation for tourists."
+    },
+    "id" : "18",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Attraction",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://schema.org/TouristAttraction",
+        "type" : "label"
+      } ],
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Point_of_interest",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Attraction",
+      "en" : "Attraction"
+    },
+    "subClasses" : [ "94", "96", "82", "53", "85" ],
+    "intersection" : [ "18" ],
+    "comment" : {
+      "en" : "An attraction is a specific location that tourists may find interesting."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "54",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#CathedralAttraction",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Cathedral",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CathedralAttraction",
+      "en" : "CathedralAttraction"
+    },
+    "comment" : {
+      "en" : "A cathedral is a church that contains the cathedra (Latin for 'seat') of a bishop, thus serving as the central church of a diocese, conference, or episcopate."
+    },
+    "id" : "82",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#DelMarHotel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DelMarHotel",
+      "en" : "DelMarHotel"
+    },
+    "id" : "63",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#CongressEvent",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Congress",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CongressEvent",
+      "en" : "CongressEvent"
+    },
+    "comment" : {
+      "en" : "A congress is a formal meeting of the representatives of different countries, constituent states, organizations, trade unions, political parties, or other groups."
+    },
+    "id" : "108",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Rating",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "en" : "Rating"
+    },
+    "subClasses" : [ "37", "52", "55" ],
+    "intersection" : [ "1" ],
+    "comment" : {
+      "en" : "This class is equivalent to anything that is given a numeric rating value between 0 and 5."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "38",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportCompany",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompany",
+      "en" : "TransportCompany"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportCompany_Trans",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "TransportCompany_Trans"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportCompany_Movi",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "TransportCompany_Movi"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportCompany_City",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "TransportCompany_City"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportCompany_Metro",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "TransportCompany_Metro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportCompany_Urban",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "TransportCompany_Urban"
+      }
+    } ],
+    "comment" : {
+      "en" : "A transport company is a legal entity representing a legal association of people, dedicated to the transportation of people within a city."
+    },
+    "id" : "36",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RatingLevelBad",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RatingLevelBad",
+      "en" : "RatingLevelBad"
+    },
+    "comment" : {
+      "en" : "This class represents the set of ratings given to defined tourism entities whose numeric value is between 0 and 2."
+    },
+    "id" : "42",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RatingLevelNormal",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RatingLevelNormal",
+      "en" : "RatingLevelNormal"
+    },
+    "comment" : {
+      "en" : "This class represents the set of ratings given to defined tourism entities whose numeric value is between 2 and 4."
+    },
+    "id" : "43",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#SolHotel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SolHotel",
+      "en" : "SolHotel"
+    },
+    "id" : "61",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#AttractionType",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AttractionType",
+      "en" : "AttractionType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#AttractionType_Monument",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "AttractionType_Monument"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#AttractionType_Museum",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "AttractionType_Museum"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#AttractionType_Cultural",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "AttractionType_Cultural"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#AttractionType_Beach",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "AttractionType_Beach"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#AttractionType_Park",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "AttractionType_Park"
+      }
+    } ],
+    "comment" : {
+      "en" : "An AttractionType defines a kind of tourism attraction (point of interest) with unique characteristics."
+    },
+    "id" : "67",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TradicionRestaurant",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TradicionRestaurant",
+      "en" : "TradicionRestaurant"
+    },
+    "id" : "76",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#CarnivalEvent",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Carnival",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CarnivalEvent",
+      "en" : "CarnivalEvent"
+    },
+    "comment" : {
+      "en" : "Carnival is an event that typically involves public celebrations, including events such as parades, public street parties and other entertainments, combining some elements of a circus."
+    },
+    "id" : "129",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#ValuePartition",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValuePartition"
+    },
+    "id" : "130"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#GourmetRestaurant",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GourmetRestaurant",
+      "en" : "GourmetRestaurant"
+    },
+    "id" : "74",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#FairEvent",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Fair",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FairEvent",
+      "en" : "FairEvent"
+    },
+    "comment" : {
+      "en" : "A fair (archaic: faire or fayre) is a gathering of people for a variety of entertainment or commercial activities. Fairs are typically temporary with scheduled times lasting from an afternoon to several weeks."
+    },
+    "id" : "145",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Restaurant",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://schema.org/Restaurant",
+        "type" : "label"
+      } ],
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Restaurant",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "en" : "Restaurant"
+    },
+    "subClasses" : [ "74", "76", "49", "15", "78" ],
+    "intersection" : [ "18" ],
+    "comment" : {
+      "en" : "A restaurant is a business that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "16",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#MuseumAttraction",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Museum",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MuseumAttraction",
+      "en" : "MuseumAttraction"
+    },
+    "comment" : {
+      "en" : "A museum (/mjuːˈziːəm/ mew-ZEE-əm; plural museums or, rarely, musea) is a building or institution that cares for and displays a collection of artifacts and other objects of artistic, cultural, historical, or scientific importance."
+    },
+    "id" : "96",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#HotelType",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelType",
+      "en" : "HotelType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#HotelType_Countryside",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "HotelType_Countryside"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#HotelType_Luxury",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "HotelType_Luxury"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#HotelType_Business",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "HotelType_Business"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#HotelType_Touristic",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "HotelType_Touristic"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#HotelType_Beach",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "HotelType_Beach"
+      }
+    } ],
+    "comment" : {
+      "en" : "A kind of hotel with unique characteristics."
+    },
+    "id" : "70",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#PalaceHotel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalaceHotel",
+      "en" : "PalaceHotel"
+    },
+    "id" : "58",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#City",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/City",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "City",
+      "undefined" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Valencia",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Valencia",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Valencia (Valencian: València) is the capital of the autonomous community of Valencia and the third-most populated municipality in Spain, with 791,413 inhabitants. It is also the capital of the province of the same name. The wider urban area also comprising the neighbouring municipalities has a population of around 1.6 million, constituting one of the major urban areas on the European side of the Mediterranean Sea. It is located on the banks of the Turia, on the east coast of the Iberian Peninsula, at the Gulf of Valencia, north of the Albufera lagoon."
+      },
+      "labels" : {
+        "IRI-based" : "Valencia",
+        "undefined" : "Valencia"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Madrid",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Madrid",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Madrid (/məˈdrɪd/ mə-DRID, Spanish: [maˈðɾið]) is the capital and most populous city of Spain. The city has almost 3.4 million inhabitants and a metropolitan area population of approximately 6.7 million. It is the second-largest city in the European Union (EU), and its monocentric metropolitan area is the third-largest in the EU. The municipality covers 604.3 km2 (233.3 sq mi) geographical area. Madrid lies on the River Manzanares in the central part of the Iberian Peninsula. Capital city of both Spain (almost without interruption since 1561) and the surrounding autonomous community of Madrid (since 1983), it is also the political, economic and cultural centre of the country. The city is situated on an elevated plain about 300 km (190 mi) from the closest seaside location."
+      },
+      "labels" : {
+        "IRI-based" : "Madrid",
+        "undefined" : "Madrid"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Bilbao",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Bilbao",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Bilbao (/bɪlˈbaʊ, -ˈbɑːoʊ/, also US: /-ˈbeɪoʊ/, Spanish: [bilˈβao]; Basque: Bilbo [bilβo]) is a city in northern Spain, the largest city in the province of Biscay and in the Basque Country as a whole. It is also the largest city proper in northern Spain. Bilbao is the tenth largest city in Spain, with a population of 345,141 as of 2015. The Bilbao metropolitan area has 1,037,847 inhabitants, making it one of the most populous metropolitan areas in northern Spain; with a population of 875,552 the comarca of Greater Bilbao is the fifth-largest urban area in Spain. Bilbao is also the main urban area in what is defined as the Greater Basque region. Bilbao is located in the north-central part of Spain, some 16 kilometres (10 mi) south of the Bay of Biscay, where the economic social development is located, where the estuary of Bilbao is formed. Its main urban core is surrounded by two small mountain ranges with an average elevation of 400 metres (1,300 ft)."
+      },
+      "labels" : {
+        "IRI-based" : "Bilbao",
+        "undefined" : "Bilbao"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Sevilla",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Seville",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Seville (/səˈvɪl/; Spanish: Sevilla, pronounced [seˈβiʎa]) is the capital and largest city of the Spanish autonomous community of Andalusia and the province of Seville. It is situated on the lower reaches of the River Guadalquivir, in the southwest of the Iberian Peninsula. Seville has a municipal population of about 685,000 as of 2021, and a metropolitan population of about 1.5 million, making it the largest city in Andalusia, the fourth-largest city in Spain and the 26th most populous municipality in the European Union. Its old town, with an area of 4 square kilometres (2 sq mi), contains three UNESCO World Heritage Sites: the Alcázar palace complex, the Cathedral and the General Archive of the Indies. The Seville harbour, located about 80 kilometres (50 miles) from the Atlantic Ocean, is the only river port in Spain."
+      },
+      "labels" : {
+        "IRI-based" : "Sevilla",
+        "undefined" : "Sevilla"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Zaragoza",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Zaragoza",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Zaragoza, also known in English as Saragossa, is the capital city of the Zaragoza Province and of the autonomous community of Aragon, Spain. It lies by the Ebro river and its tributaries, the Huerva and the Gállego, roughly in the center of both Aragon and the Ebro basin. On 1 January 2021 the population of the municipality of Zaragoza was 675,301, (the fifth most populated in Spain) on a land area of 973.78 square kilometres (375.98 square miles)."
+      },
+      "labels" : {
+        "IRI-based" : "Zaragoza",
+        "undefined" : "Zaragoza"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Barcelona",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Barcelona",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Barcelona (/ˌbɑːrsəˈloʊnə/ BAR-sə-LOH-nə, Catalan: [bəɾsəˈlonə], Spanish: [baɾθeˈlona]) is a city on the coast of northeastern Spain. It is the capital and largest city of the autonomous community of Catalonia, as well as the second most populous municipality of Spain. With a population of 1.6 million within city limits, its urban area extends to numerous neighbouring municipalities within the Province of Barcelona and is home to around 4.8 million people, making it the fifth most populous urban area in the European Union after Paris, the Ruhr area, Madrid, and Milan. It is one of the largest metropolises on the Mediterranean Sea, located on the coast between the mouths of the rivers Llobregat and Besòs, and bounded to the west by the Serra de Collserola mountain range, the tallest peak of which is 512 metres (1,680 feet) high."
+      },
+      "labels" : {
+        "IRI-based" : "Barcelona",
+        "undefined" : "Barcelona"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Toledo",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Toledo,_Spain",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Toledo (UK: /tɒˈleɪdoʊ/ tol-AY-doh, Spanish: [toˈleðo]) is a city and municipality of Spain, capital of the province of Toledo and the de jure seat of the government and parliament of the autonomous community of Castilla–La Mancha. Toledo was declared a World Heritage Site by UNESCO in 1986 for its extensive monumental and cultural heritage. Located on the banks of the Tagus in central Iberia, Toledo is known as the \"City of the Three Cultures\" for the cultural influences of Christians, Muslims, and Jews throughout its history. It was the capital, from 542 to 725 CE, of the Visigothic kingdom, which followed the fall of the Roman Empire."
+      },
+      "labels" : {
+        "IRI-based" : "Toledo",
+        "undefined" : "Toledo"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Cadiz",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/C%C3%A1diz",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Cádiz (/kəˈdɪz/, US also /ˈkeɪdɪz, ˈkæd-, ˈkɑːd-/, Spanish: [ˈkaðiθ]) is a city and port in southwestern Spain. It is the capital of the Province of Cádiz, one of eight that make up the autonomous community of Andalusia. Cádiz, one of the oldest continuously inhabited cities in Western Europe, with archaeological remains dating to the 12th century BC, was founded by the Phoenicians. In the 18th century, the Port in the Bay of Cádiz consolidated as the main harbor of mainland Spain, enjoying the virtual monopoly of trade with the Americas until 1778. It is also the site of the University of Cádiz. Situated on a narrow slice of land surrounded by the sea‚ Cádiz is, in most respects, a typically Andalusian city with well-preserved historical landmarks."
+      },
+      "labels" : {
+        "IRI-based" : "Cadiz",
+        "undefined" : "Cadiz"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#SanSebastian",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/San_Sebasti%C3%A1n",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "San Sebastian, officially known as Donostia–San Sebastián (names in both local languages: Donostia (Basque pronunciation: [doˈnos̺tia]) and San Sebastián (Spanish: [san seβasˈtjan])) is a city and municipality located in the Basque Autonomous Community, Spain. It lies on the coast of the Bay of Biscay, 20 km (12 miles) from the France–Spain border. The capital city of the province of Gipuzkoa, the municipality's population is 188,102 as of 2021, with its metropolitan area reaching 436,500 in 2010."
+      },
+      "labels" : {
+        "IRI-based" : "SanSebastian",
+        "undefined" : "SanSebastian"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Malaga",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/M%C3%A1laga",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Málaga (/mæləɡə/, Spanish: [ˈmalaɣa]) is a municipality of Spain, capital of the Province of Málaga, in the autonomous community of Andalusia. With a population of 578,460 in 2020, it is the second-most populous city in Andalusia after Seville and the sixth most populous in Spain. It lies on the Costa del Sol (Coast of the Sun) of the Mediterranean, about 100 kilometres (62.14 miles) east of the Strait of Gibraltar and about 130 km (80.78 mi) north of Africa. Málaga's history spans about 2,800 years, making it one of the oldest cities in Europe and one of the oldest continuously inhabited cities in the world."
+      },
+      "labels" : {
+        "IRI-based" : "Malaga",
+        "undefined" : "Malaga"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Pamplona",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Pamplona",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Pamplona (Spanish: [pamˈplona]; Basque: Iruña [iɾuɲa] or Iruñea [iɾuɲe.a]), historically also known as Pampeluna in English, is the capital city of the Chartered Community of Navarre, in Spain. It is also the third-largest city in the greater Basque cultural region. Lying at near 450 m (1,480 ft) above sea level, the city (and the wider Cuenca de Pamplona) is located on the flood plain of the Arga river, a second-order tributary of the Ebro."
+      },
+      "labels" : {
+        "IRI-based" : "Pamplona",
+        "undefined" : "Pamplona"
+      }
+    } ],
+    "comment" : {
+      "en" : "A relatively large and permanent settlement, particularly a large urban settlement."
+    },
+    "id" : "68",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RecommendedHotel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedHotel"
+    },
+    "id" : "5",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#VistaHotel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VistaHotel",
+      "en" : "VistaHotel"
+    },
+    "id" : "163",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#PalaceAttraction",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Palace",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PalaceAttraction",
+      "en" : "PalaceAttraction"
+    },
+    "comment" : {
+      "en" : "A palace is a grand residence, especially a royal residence, or the home of a head of state or some other high-ranking dignitary, such as a bishop or archbishop."
+    },
+    "id" : "85",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Hotel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://schema.org/Hotel",
+        "type" : "label"
+      } ],
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Hotel",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Hotel",
+      "en" : "Hotel"
+    },
+    "subClasses" : [ "58", "39", "61", "63", "163" ],
+    "intersection" : [ "18" ],
+    "comment" : {
+      "en" : "A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator and other kitchen facilities, upholstered chairs, a flat screen television, and en-suite bathrooms."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "40",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#Event",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://schema.org/Event",
+        "type" : "label"
+      } ],
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Event",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "108", "50", "170", "145", "129" ],
+    "intersection" : [ "18" ],
+    "comment" : {
+      "en" : "An event is any activity that is planned for a special purpose and usually involves a lot of people."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "51",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RatingLevel",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RatingLevel",
+      "en" : "RatingLevel"
+    },
+    "subClasses" : [ "45", "42", "43" ],
+    "comment" : {
+      "en" : "A RatingLevel acts as a superclass of the different rating levels for the defined tourism entities."
+    },
+    "id" : "66",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportType",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportType",
+      "en" : "TransportType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportType_Tramway",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Tram",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "A tram (called a streetcar or trolley in North America) is a rail vehicle that travels on tramway tracks on public urban streets; some include segments on segregated right-of-way. The tramlines or networks operated as public transport are called tramways or simply trams/streetcars. Many recently built tramways use the contemporary term light rail. The vehicles are called streetcars or trolleys (not to be confused with trolleybus) in North America and trams or tramcars elsewhere."
+      },
+      "labels" : {
+        "IRI-based" : "TransportType_Tramway"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportType_PublicBycicle",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Bicycle-sharing_system",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "A bicycle-sharing system, bike share program, public bicycle scheme, or public bike share (PBS) scheme, is a shared transport service where bicycles are available for shared use by individuals at low cost. The programmes themselves include both docking and dockless systems, where docking systems allow users to rent a bike from a dock, i.e., a technology-enabled bicycle rack and return at another node or dock within the system — and dockless systems, which offer a node-free system relying on smart technology."
+      },
+      "labels" : {
+        "IRI-based" : "TransportType_PublicBycicle"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportType_Bus",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Bus",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "A bus (contracted from omnibus, with variants multibus, motorbus, autobus, etc.) is a road vehicle that carries significantly more passengers than an average car or van. It is most commonly used in public transport, but is also in use for charter purposes, or through private ownership. Although the average bus carries between 30 and 100 passengers, some buses have a capacity of up to 300 passengers. The most common type is the single-deck rigid bus, with double-decker and articulated buses carrying larger loads, and midibuses and minibuses carrying smaller loads. Coaches are used for longer-distance services."
+      },
+      "labels" : {
+        "IRI-based" : "TransportType_Bus"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportType_Metro",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Rapid_transit",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Rapid transit or mass rapid transit (MRT), also known as heavy rail or metro, is a type of high-capacity public transport generally found in urban areas. A rapid transit system that primarily or traditionally runs below the surface may be called a subway, tube, or underground. Unlike buses or trams, rapid transit systems are railways (usually electric) that operate on an exclusive right-of-way, which cannot be accessed by pedestrians or other vehicles, and which is often grade-separated in tunnels or on elevated railways. Modern services on rapid transit systems are provided on designated lines between stations typically using electric multiple units on rail tracks, although some systems use guided rubber tires, magnetic levitation (maglev), or monorail."
+      },
+      "labels" : {
+        "IRI-based" : "TransportType_Metro"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#TransportType_Taxi",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Taxi",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "A taxi, also known as a taxicab or simply a cab, is a type of vehicle for hire with a driver, used by a single passenger or small group of passengers, often for a non-shared ride. A taxicab conveys passengers between locations of their choice. This differs from public transport where the pick-up and drop-off locations are decided by the service provider, not by the customers, although demand responsive transport and share taxis provide a hybrid bus/taxi mode."
+      },
+      "labels" : {
+        "IRI-based" : "TransportType_Taxi"
+      }
+    } ],
+    "comment" : {
+      "en" : "A kind of transport with unique characteristics."
+    },
+    "id" : "69",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RatingLevelGood",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RatingLevelGood",
+      "en" : "RatingLevelGood"
+    },
+    "comment" : {
+      "en" : "This class represents the set of ratings given to defined tourism entities whose numeric value is between 4 and 5."
+    },
+    "id" : "45",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RestaurantType",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RestaurantType",
+      "en" : "RestaurantType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RestaurantType_Mexican",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Mexican_cuisine",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Mexican cuisine consists of the cooking cuisines and traditions of the modern country of Mexico. Its earliest roots lie in Mesoamerican cuisine. Its ingredients and methods begin with the first agricultural communities such as the Olmec and Maya who domesticated maize, created the standard process of maize nixtamalization, and established their foodways. Successive waves of other Mesoamerican groups brought with them their own cooking methods. These included: the Teotihuacanos, Toltec, Huastec, Zapotec, Mixtec, Otomi, Purépecha, Totonac, Mazatec, Mazahua, and Nahua. With the Mexica formation of the multi-ethnic Triple Alliance (Aztec Empire), culinary foodways became infused (Aztec cuisine). Today's food staples native to the land include corn (maize), turkey, beans, squash, amaranth, chia, avocados, tomatoes, tomatillos, cacao, vanilla, agave, spirulina, sweet potato, cactus, and chili pepper."
+      },
+      "labels" : {
+        "IRI-based" : "RestaurantType_Mexican",
+        "undefined" : "RestaurantType_Mexican"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RestaurantType_Mediterranean",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Mediterranean_cuisine",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Mediterranean cuisine is the food and methods of preparation used by the people of the Mediterranean Basin. The idea of a Mediterranean cuisine originates with the cookery writer Elizabeth David's book, A Book of Mediterranean Food (1950) and was amplified by other writers working in English. Many writers define the three core elements of the cuisine as the olive, wheat, and the grape, yielding olive oil, bread and pasta, and wine; other writers deny that the widely varied foods of the Mediterranean basin constitute a cuisine at all. A common definition of the geographical area covered, proposed by David, follows the distribution of the olive tree. The region spans a wide variety of cultures with distinct cuisines, in particular (going anticlockwise around the region) the Maghrebi, Egyptian, Levantine, Ottoman (Turkish), Greek, Italian, French (Provençal), and Spanish, though some authors include additional cuisines."
+      },
+      "labels" : {
+        "IRI-based" : "RestaurantType_Mediterranean",
+        "undefined" : "RestaurantType_Mediterranean"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RestaurantType_Japanese",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Japanese_cuisine",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through centuries of political, economic, and social changes. The traditional cuisine of Japan (Japanese: washoku) is based on rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often consist of fish, pickled vegetables, and vegetables cooked in broth. Seafood is common, often grilled, but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a light batter, as tempura. Apart from rice, a staple includes noodles, such as soba and udon. Japan also has many simmered dishes, such as fish products in broth called oden, or beef in sukiyaki and nikujaga."
+      },
+      "labels" : {
+        "IRI-based" : "RestaurantType_Japanese",
+        "undefined" : "RestaurantType_Japanese"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RestaurantType_Spanish",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Spanish_cuisine",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Spanish cuisine consists of the cooking traditions and practices from Spain. Olive oil (of which Spain is the world's largest producer) is heavily used in Spanish cuisine. It forms the base of many vegetable sauces (known in Spanish as sofritos). Herbs most commonly used include parsley, oregano, rosemary and thyme. The use of garlic has been noted as common in Spanish cooking. The most used meats in Spanish cuisine include chicken, pork, lamb and veal. Fish and seafood are also consumed on a regular basis. Tapas are snacks and appetizers commonly served with drinks in bars and cafes."
+      },
+      "labels" : {
+        "IRI-based" : "RestaurantType_Spanish",
+        "undefined" : "RestaurantType_Spanish"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RestaurantType_Italian",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Italian_cuisine",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Italian cuisine (Italian: Cucina italiana, pronounced [kuˈtʃiːna itaˈljaːna]) is a Mediterranean cuisine consisting of the ingredients, recipes and cooking techniques developed across the Italian Peninsula since antiquity, and later spread around the world together with waves of Italian diaspora. Significant changes occurred with the colonization of the Americas and the introduction of potatoes, tomatoes, capsicums, maize and sugar beet — the latter introduced in quantity in the 18th century. It is one of the best-known and most appreciated gastronomies worldwide. Italian cuisine includes deeply rooted traditions common to the whole country, as well as all the regional gastronomies, different from each other, especially between the north, the centre and the south of Italy, which are in continuous exchange."
+      },
+      "labels" : {
+        "IRI-based" : "RestaurantType_Italian",
+        "undefined" : "RestaurantType_Italian"
+      }
+    } ],
+    "comment" : {
+      "en" : "A restaurant with a specific cuisine."
+    },
+    "id" : "64",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#FestivalEvent",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/page/Festival",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FestivalEvent",
+      "en" : "FestivalEvent"
+    },
+    "comment" : {
+      "en" : "A festival is an event ordinarily celebrated by a community and centering on some characteristic aspect or aspects of that community and its religion or cultures."
+    },
+    "id" : "170",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#ParkAttraction",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "https://dbpedia.org/ontology/Park",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ParkAttraction",
+      "en" : "ParkAttraction"
+    },
+    "comment" : {
+      "en" : "A park is an area of natural, semi-natural or planted space set aside for human enjoyment and recreation or for the protection of wildlife or natural habitats."
+    },
+    "id" : "94",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#EventType",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType",
+      "en" : "EventType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#EventType_Sports",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "EventType_Sports"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#EventType_Culture",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "EventType_Culture"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#EventType_Music",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "EventType_Music"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#EventType_Technology",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "EventType_Technology"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#EventType_Gastronomy",
+      "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+      "labels" : {
+        "IRI-based" : "EventType_Gastronomy"
+      }
+    } ],
+    "comment" : {
+      "en" : "A kind of event with unique characteristics."
+    },
+    "id" : "65",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#RecommendedTransport",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RecommendedTransport"
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  } ],
+  "property" : [ {
+    "id" : "19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "30",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "35",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "44",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "127",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "136",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "137",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "141",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "143",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "146",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "152",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "158",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "159",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "160",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "178",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "179",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "180",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "181",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "184",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "185",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "190",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "191",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "200",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "201",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "202",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "203",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "204",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "207",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "210",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "233",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "9",
+    "subproperty" : [ "20", "21", "22", "23", "24" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "19"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "5",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "2",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#hasCompany",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "hasCompany",
+      "en" : "hasCompany"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "17",
+    "comment" : {
+      "en" : "This property relates a transport entity to its transport company."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "range" : "43",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "45",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#nightPrice",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "nightPrice",
+      "en" : "nightPrice"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Describes the cost per night of any suitable entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "43",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "6",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "56"
+  }, {
+    "range" : "40",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "40",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "40",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#name",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "Describes the human-readable name given to an entity instance."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "range" : "38",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "16",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "range" : "16",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "75"
+  }, {
+    "range" : "16",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "16",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "54",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "54",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "54",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  }, {
+    "range" : "38",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "87"
+  }, {
+    "range" : "18",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "88"
+  }, {
+    "range" : "18",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "89"
+  }, {
+    "range" : "18",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#starRating",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "92",
+    "label" : {
+      "IRI-based" : "starRating",
+      "en" : "starRating"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "Numeric value for the assigned stars of a hotel. Hotel ratings are often used to classify hotels according to their quality."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "range" : "54",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "93"
+  }, {
+    "range" : "54",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "1",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "1",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "1",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "1",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "18",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#eventDate",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "eventDate",
+      "en" : "eventDate"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "Describes the date of an event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "103"
+  }, {
+    "range" : "1",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "1",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "1",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "1",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "0",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "0",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "1",
+    "domain" : "38",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "114"
+  }, {
+    "range" : "1",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "117"
+  }, {
+    "range" : "0",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "66",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "70",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "36",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "64",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "65",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "69",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "70",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "65",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "range" : "0",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "range" : "66",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#hasRating",
+    "inverse" : "24",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "en" : "hasRating"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "This property relates a tourism entity with its corresponding rating."
+    },
+    "attributes" : [ "object", "inverse functional" ],
+    "id" : "21"
+  }, {
+    "range" : "55",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "range" : "55",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "range" : "17",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "134"
+  }, {
+    "range" : "17",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "37",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#hasRating",
+    "inverse" : "24",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "en" : "hasRating"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "54",
+    "comment" : {
+      "en" : "This property relates a tourism entity with its corresponding rating."
+    },
+    "attributes" : [ "object", "inverse functional", "allValues" ],
+    "id" : "137"
+  }, {
+    "range" : "16",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "16",
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "17",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "36",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#hasCity",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasCity",
+      "en" : "hasCity"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "This property relates tourism entities with the cities that they are held or found in."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "range" : "36",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "142"
+  }, {
+    "range" : "69",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#ratingValue",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "ratingValue",
+      "en" : "ratingValue"
+    },
+    "domain" : "38",
+    "comment" : {
+      "en" : "Numeric value of a rating given to any suitable entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "144"
+  }, {
+    "range" : "36",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "64",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "147"
+  }, {
+    "range" : "64",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "69",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "36",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "64",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "0",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "69",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "66",
+    "domain" : "42",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#latitude",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "7",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "latitude",
+      "en" : "latitude"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
+    "range" : "66",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "0",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "66",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "158"
+  }, {
+    "range" : "69",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "0",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "66",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "40",
+    "domain" : "163",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "36",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "51",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "64",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "51",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "36",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "51",
+    "domain" : "170",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "64",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "51",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "70",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "51",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "69",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "66",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  }, {
+    "range" : "85",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "177"
+  }, {
+    "range" : "94",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
+  }, {
+    "range" : "94",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "179"
+  }, {
+    "range" : "94",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "180"
+  }, {
+    "range" : "85",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#hasType",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "hasType",
+      "en" : "hasType"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "18",
+    "comment" : {
+      "en" : "This property relates a tourism entity with the type that it belongs to."
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "range" : "96",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "182"
+  }, {
+    "range" : "94",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#isRatingOf",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "isRatingOf",
+      "en" : "isRatingOf"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "9",
+    "comment" : {
+      "en" : "This property relates a numeric rating given to a tourism entity to its corresponding entity."
+    },
+    "attributes" : [ "object", "functional" ],
+    "id" : "24"
+  }, {
+    "range" : "82",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "184"
+  }, {
+    "range" : "170",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "85",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
+  }, {
+    "range" : "96",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "170",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
+  }, {
+    "range" : "145",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#longitude",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "8",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/2003/01/geo/wgs84_pos#lon",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "longitude",
+      "en" : "longitude"
+    },
+    "domain" : "68",
+    "attributes" : [ "datatype" ],
+    "id" : "190"
+  }, {
+    "range" : "170",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "145",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "170",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "145",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "108",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "69",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "69",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "108",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "50",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "76",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "76",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "201"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#hasRating",
+    "inverse" : "24",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "en" : "hasRating"
+    },
+    "superproperty" : [ "19" ],
+    "domain" : "40",
+    "comment" : {
+      "en" : "This property relates a tourism entity with its corresponding rating."
+    },
+    "attributes" : [ "object", "inverse functional", "allValues" ],
+    "id" : "202"
+  }, {
+    "range" : "130",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "15",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "15",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "76",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "40",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "207"
+  }, {
+    "range" : "16",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "17",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "51",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "40",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "16",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
+  }, {
+    "range" : "17",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "40",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "214"
+  }, {
+    "range" : "68",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "51",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "216"
+  }, {
+    "range" : "15",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#averagePrice",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "116",
+    "label" : {
+      "IRI-based" : "averagePrice",
+      "en" : "averageCost"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Describes the average monetary cost for any suitable domain entity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "218"
+  }, {
+    "range" : "74",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "iri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology#averageCost",
+    "baseIri" : "http://www.semanticweb.org/fernandobh/intelligentTourismOntology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "averageCost"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "220"
+  }, {
+    "range" : "74",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "76",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "163",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "61",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "78",
+    "domain" : "49",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "163",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "163",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "61",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "39",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "range" : "39",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "58",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "231"
+  }, {
+    "range" : "163",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
+  }, {
+    "range" : "61",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  } ]
+}
