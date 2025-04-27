@@ -1,0 +1,101 @@
+hotel_id,nombre,ciudad,estrellas,precio_noche,valoracion,tipo hotel
+1,Hotel Vista Sevilla,Sevilla,4,278,4.7,Playa
+2,Hotel Royal Pamplona,Pamplona,3,56,3.9,Lujo
+3,Hotel Royal Málaga,Málaga,5,175,4.6,Turistico
+4,Hotel Royal Bilbao,Bilbao,3,232,3.6,Turistico
+5,Hotel Palace Zaragoza,Zaragoza,4,120,3.8,Lujo
+6,Hotel Royal San Sebastián,San Sebastián,5,245,4.4,Negocios
+7,Hotel Royal Valencia,Valencia,5,76,4.7,Turistico
+8,Hotel Vista Cádiz,Cádiz,4,150,4.0,Playa
+9,Hotel Royal Barcelona,Barcelona,4,252,4.0,Playa
+10,Hotel Royal Cádiz,Cádiz,3,196,3.8,Turistico
+11,Hotel Royal Madrid,Madrid,3,146,4.4,Negocios
+12,Hotel Royal Madrid,Madrid,4,50,3.9,Turistico
+13,Hotel Del Mar Sevilla,Sevilla,5,95,4.4,Turistico
+14,Hotel Palace Madrid,Madrid,5,91,4.5,Negocios
+15,Hotel Palace Cádiz,Cádiz,3,287,4.8,Negocios
+16,Hotel Palace Zaragoza,Zaragoza,5,199,4.9,Negocios
+17,Hotel Del Mar Toledo,Toledo,5,145,4.3,Playa
+18,Hotel Palace Madrid,Madrid,4,290,4.2,Turistico
+19,Hotel Sol Bilbao,Bilbao,5,290,4.6,Playa
+20,Hotel Vista Valencia,Valencia,3,149,4.6,Turistico
+21,Hotel Sol Valencia,Valencia,5,291,4.8,Lujo
+22,Hotel Vista Málaga,Málaga,5,238,4.4,Negocios
+23,Hotel Vista Toledo,Toledo,3,99,4.6,Turistico
+24,Hotel Royal Zaragoza,Zaragoza,4,150,4.4,Negocios
+25,Hotel Royal Sevilla,Sevilla,5,92,3.7,Turistico
+26,Hotel Sol Cádiz,Cádiz,4,151,4.6,Turistico
+27,Hotel Sol Bilbao,Bilbao,5,56,4.9,Negocios
+28,Hotel Del Mar San Sebastián,San Sebastián,3,110,3.9,Lujo
+29,Hotel Royal Madrid,Madrid,5,131,4.4,Playa
+30,Hotel Del Mar Pamplona,Pamplona,4,270,4.4,Negocios
+31,Hotel Vista Madrid,Madrid,3,117,4.4,Turistico
+32,Hotel Palace Toledo,Toledo,5,74,3.8,Rural
+33,Hotel Sol Barcelona,Barcelona,5,189,3.5,Rural
+34,Hotel Del Mar Barcelona,Barcelona,5,250,4.1,Turistico
+35,Hotel Del Mar Pamplona,Pamplona,5,59,3.6,Turistico
+36,Hotel Palace Zaragoza,Zaragoza,5,298,3.9,Playa
+37,Hotel Del Mar Valencia,Valencia,3,139,3.8,Rural
+38,Hotel Del Mar Málaga,Málaga,3,196,4.8,Rural
+39,Hotel Sol Zaragoza,Zaragoza,3,262,3.6,Lujo
+40,Hotel Del Mar San Sebastián,San Sebastián,4,270,3.7,Rural
+41,Hotel Royal Cádiz,Cádiz,3,81,4.8,Playa
+42,Hotel Palace Madrid,Madrid,5,227,5.0,Lujo
+43,Hotel Royal Pamplona,Pamplona,5,116,4.3,Rural
+44,Hotel Vista Zaragoza,Zaragoza,5,131,4.7,Lujo
+45,Hotel Royal Barcelona,Barcelona,4,269,4.9,Playa
+46,Hotel Vista Sevilla,Sevilla,5,292,4.9,Turistico
+47,Hotel Del Mar San Sebastián,San Sebastián,4,65,4.1,Turistico
+48,Hotel Palace Málaga,Málaga,3,195,4.8,Turistico
+49,Hotel Vista Pamplona,Pamplona,5,98,4.2,Rural
+50,Hotel Sol Cádiz,Cádiz,5,260,4.9,Negocios
+51,Hotel Palace Pamplona,Pamplona,5,79,4.1,Playa
+52,Hotel Sol Sevilla,Sevilla,3,146,4.7,Negocios
+53,Hotel Del Mar Málaga,Málaga,5,65,4.7,Playa
+54,Hotel Palace Toledo,Toledo,5,174,4.7,Lujo
+55,Hotel Vista Cádiz,Cádiz,5,254,4.5,Turistico
+56,Hotel Del Mar Cádiz,Cádiz,5,167,4.4,Lujo
+57,Hotel Sol Sevilla,Sevilla,5,56,4.2,Lujo
+58,Hotel Del Mar Sevilla,Sevilla,5,208,4.9,Negocios
+59,Hotel Vista San Sebastián,San Sebastián,4,99,3.7,Rural
+60,Hotel Del Mar Barcelona,Barcelona,4,298,4.6,Playa
+61,Hotel Del Mar Cádiz,Cádiz,3,283,4.4,Playa
+62,Hotel Palace Barcelona,Barcelona,4,106,3.8,Rural
+63,Hotel Sol Barcelona,Barcelona,4,181,5.0,Turistico
+64,Hotel Palace Barcelona,Barcelona,3,251,4.3,Negocios
+65,Hotel Palace Toledo,Toledo,5,193,4.2,Lujo
+66,Hotel Sol Madrid,Madrid,3,114,4.9,Negocios
+67,Hotel Vista Madrid,Madrid,4,71,4.2,Rural
+68,Hotel Del Mar Madrid,Madrid,3,172,3.8,Lujo
+69,Hotel Royal Madrid,Madrid,3,203,5.0,Playa
+70,Hotel Royal Zaragoza,Zaragoza,3,165,4.6,Playa
+71,Hotel Del Mar Málaga,Málaga,5,196,4.7,Playa
+72,Hotel Del Mar Zaragoza,Zaragoza,3,170,5.0,Playa
+73,Hotel Vista San Sebastián,San Sebastián,4,227,4.3,Rural
+74,Hotel Palace Pamplona,Pamplona,4,58,4.5,Lujo
+75,Hotel Royal Madrid,Madrid,3,67,3.9,Rural
+76,Hotel Vista Barcelona,Barcelona,3,251,4.3,Rural
+77,Hotel Sol Barcelona,Barcelona,4,222,4.6,Lujo
+78,Hotel Royal Bilbao,Bilbao,3,164,3.7,Rural
+79,Hotel Sol Málaga,Málaga,5,84,4.9,Negocios
+80,Hotel Vista San Sebastián,San Sebastián,4,220,4.5,Negocios
+81,Hotel Vista Barcelona,Barcelona,4,74,3.7,Turistico
+82,Hotel Palace Bilbao,Bilbao,5,286,3.7,Turistico
+83,Hotel Palace Cádiz,Cádiz,3,251,4.4,Rural
+84,Hotel Vista Madrid,Madrid,4,150,4.0,Rural
+85,Hotel Palace Madrid,Madrid,4,65,4.3,Rural
+86,Hotel Vista Toledo,Toledo,5,70,4.6,Playa
+87,Hotel Sol San Sebastián,San Sebastián,4,75,4.7,Negocios
+88,Hotel Vista Barcelona,Barcelona,3,149,4.9,Playa
+89,Hotel Vista Bilbao,Bilbao,5,148,4.9,Playa
+90,Hotel Del Mar Sevilla,Sevilla,5,121,4.2,Playa
+91,Hotel Del Mar Valencia,Valencia,4,283,4.7,Negocios
+92,Hotel Royal Málaga,Málaga,3,150,4.2,Rural
+93,Hotel Del Mar Madrid,Madrid,4,177,4.7,Turistico
+94,Hotel Vista Bilbao,Bilbao,3,253,3.7,Negocios
+95,Hotel Palace Pamplona,Pamplona,5,177,3.9,Turistico
+96,Hotel Vista Pamplona,Pamplona,3,109,4.4,Rural
+97,Hotel Palace Málaga,Málaga,3,160,4.6,Negocios
+98,Hotel Palace Madrid,Madrid,4,284,4.1,Rural
+99,Hotel Sol Sevilla,Sevilla,5,120,4.0,Playa
+100,Hotel Palace Málaga,Málaga,3,198,4.2,Rural

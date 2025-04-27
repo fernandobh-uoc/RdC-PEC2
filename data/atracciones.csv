@@ -1,0 +1,101 @@
+atraccion_id,nombre,ciudad,tipo,valoracion
+1,Castillo Zaragoza,Zaragoza,Museo,3.7
+2,Castillo Sevilla,Sevilla,Monumento,4.6
+3,Castillo Zaragoza,Zaragoza,Museo,5.0
+4,Museo Madrid,Madrid,Museo,3.7
+5,Castillo Cádiz,Cádiz,Playa,3.5
+6,Palacio Bilbao,Bilbao,Museo,4.9
+7,Catedral Sevilla,Sevilla,Playa,4.1
+8,Parque San Sebastián,San Sebastián,Parque,4.9
+9,Catedral Pamplona,Pamplona,Monumento,4.4
+10,Castillo Toledo,Toledo,Monumento,3.7
+11,Parque Toledo,Toledo,Monumento,4.8
+12,Catedral Cádiz,Cádiz,Parque,4.4
+13,Palacio Pamplona,Pamplona,Cultural,4.0
+14,Castillo Pamplona,Pamplona,Playa,3.9
+15,Castillo Cádiz,Cádiz,Monumento,4.0
+16,Castillo Barcelona,Barcelona,Cultural,4.5
+17,Parque Madrid,Madrid,Cultural,3.8
+18,Museo Málaga,Málaga,Parque,4.3
+19,Palacio Barcelona,Barcelona,Cultural,4.7
+20,Catedral Barcelona,Barcelona,Playa,3.7
+21,Catedral Málaga,Málaga,Parque,4.4
+22,Catedral Valencia,Valencia,Monumento,3.6
+23,Castillo San Sebastián,San Sebastián,Parque,4.3
+24,Castillo Zaragoza,Zaragoza,Parque,3.5
+25,Parque Bilbao,Bilbao,Playa,4.6
+26,Catedral Zaragoza,Zaragoza,Playa,3.6
+27,Castillo Málaga,Málaga,Cultural,4.4
+28,Parque San Sebastián,San Sebastián,Cultural,4.2
+29,Castillo San Sebastián,San Sebastián,Museo,4.8
+30,Castillo Valencia,Valencia,Playa,4.7
+31,Palacio Málaga,Málaga,Cultural,3.9
+32,Museo Zaragoza,Zaragoza,Monumento,3.7
+33,Museo Barcelona,Barcelona,Museo,3.8
+34,Museo Zaragoza,Zaragoza,Playa,4.3
+35,Palacio Pamplona,Pamplona,Playa,4.7
+36,Parque Pamplona,Pamplona,Monumento,4.1
+37,Castillo Madrid,Madrid,Museo,4.0
+38,Palacio Toledo,Toledo,Parque,3.8
+39,Castillo San Sebastián,San Sebastián,Parque,4.5
+40,Palacio Cádiz,Cádiz,Playa,4.9
+41,Catedral Toledo,Toledo,Monumento,4.6
+42,Museo Madrid,Madrid,Parque,3.5
+43,Parque Barcelona,Barcelona,Parque,4.9
+44,Museo Sevilla,Sevilla,Playa,4.0
+45,Catedral Barcelona,Barcelona,Museo,4.3
+46,Museo Toledo,Toledo,Monumento,4.2
+47,Palacio Toledo,Toledo,Monumento,3.6
+48,Parque San Sebastián,San Sebastián,Parque,4.8
+49,Castillo San Sebastián,San Sebastián,Cultural,3.8
+50,Parque Málaga,Málaga,Playa,4.4
+51,Palacio Madrid,Madrid,Museo,3.9
+52,Catedral Madrid,Madrid,Playa,4.6
+53,Catedral Valencia,Valencia,Museo,4.3
+54,Catedral Toledo,Toledo,Playa,4.0
+55,Parque Zaragoza,Zaragoza,Museo,4.5
+56,Museo Toledo,Toledo,Cultural,4.2
+57,Parque Cádiz,Cádiz,Parque,4.3
+58,Catedral Málaga,Málaga,Museo,4.1
+59,Catedral Bilbao,Bilbao,Parque,3.7
+60,Parque Cádiz,Cádiz,Museo,4.2
+61,Palacio Zaragoza,Zaragoza,Parque,4.4
+62,Catedral Valencia,Valencia,Monumento,4.0
+63,Museo Zaragoza,Zaragoza,Parque,4.1
+64,Museo San Sebastián,San Sebastián,Playa,4.2
+65,Parque Málaga,Málaga,Museo,4.0
+66,Museo San Sebastián,San Sebastián,Playa,4.5
+67,Parque Cádiz,Cádiz,Museo,4.1
+68,Castillo Madrid,Madrid,Monumento,4.0
+69,Parque Cádiz,Cádiz,Parque,4.6
+70,Castillo Pamplona,Pamplona,Museo,4.8
+71,Parque Madrid,Madrid,Playa,4.3
+72,Parque Valencia,Valencia,Museo,3.7
+73,Catedral Valencia,Valencia,Monumento,4.6
+74,Palacio Madrid,Madrid,Monumento,4.6
+75,Catedral Toledo,Toledo,Cultural,3.7
+76,Palacio Barcelona,Barcelona,Playa,4.3
+77,Palacio Pamplona,Pamplona,Playa,4.3
+78,Castillo Bilbao,Bilbao,Playa,4.4
+79,Catedral Pamplona,Pamplona,Playa,4.0
+80,Parque Madrid,Madrid,Parque,4.9
+81,Parque Sevilla,Sevilla,Cultural,4.6
+82,Palacio Valencia,Valencia,Parque,3.8
+83,Castillo Málaga,Málaga,Playa,4.3
+84,Castillo Pamplona,Pamplona,Museo,3.7
+85,Castillo Pamplona,Pamplona,Monumento,3.6
+86,Museo Zaragoza,Zaragoza,Museo,3.8
+87,Parque San Sebastián,San Sebastián,Monumento,3.9
+88,Palacio Toledo,Toledo,Museo,3.8
+89,Castillo Zaragoza,Zaragoza,Museo,4.1
+90,Museo Pamplona,Pamplona,Playa,5.0
+91,Catedral Sevilla,Sevilla,Cultural,4.6
+92,Museo Cádiz,Cádiz,Playa,4.6
+93,Parque Toledo,Toledo,Playa,3.8
+94,Catedral Toledo,Toledo,Playa,4.3
+95,Catedral Valencia,Valencia,Parque,4.8
+96,Museo Madrid,Madrid,Cultural,4.2
+97,Catedral Zaragoza,Zaragoza,Playa,4.6
+98,Parque Cádiz,Cádiz,Museo,4.7
+99,Catedral Bilbao,Bilbao,Cultural,4.9
+100,Museo Bilbao,Bilbao,Parque,4.9
