@@ -1,0 +1,4455 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/fernandobh/intelligentTourismOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/fernandobh/intelligentTourismOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/fernandobh/intelligentTourismOntology/"/>
+    <Prefix name="dbo" IRI="https://dbpedia.org/ontology/"/>
+    <Prefix name="dbp" IRI="https://dbpedia.org/page/"/>
+    <Prefix name="geo" IRI="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="widoco" IRI="https://w3id.org/widoco/vocab#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:abstract"/>
+        <Literal xml:lang="en">Ontology for intelligent tourism and recommendations.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-04-28</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>fernandobh@uoc.edu</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal>This ontology models the domain of smart tourism by integrating information about events, attractions, hotels, restaurants, and means of transportation within the context of Spanish cities.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <Literal>https://creativecommons.org/licenses/by/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal>Intelligent Tourism and Recommendations Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="widoco:introduction"/>
+        <Literal xml:lang="en">This is the documentation for the generated ontology assignment in subject &quot;Representacion del conocimiento&quot; at UOC.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Attraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttractionRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AttractionType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CarnivalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CastleAttraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CathedralAttraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConcertEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CongressEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DelMarHotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeliciaRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EventType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FairEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FestivalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FusionRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GourmetRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HotelType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MuseumAttraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PalaceAttraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PalaceHotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParkAttraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatingLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatingLevelBad"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatingLevelGood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatingLevelNormal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommendation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecommendedAttraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecommendedEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecommendedHotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecommendedRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecommendedTransport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantRating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RestaurantType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RoyalHotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SaborRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SolHotel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TourismEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TradicionRestaurant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VistaHotel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRatingOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#averageCost"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#averagePrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eventDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#latitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#longitude"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nightPrice"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ratingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#starRating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction1_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction2_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction3_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction4_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Attraction5_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttractionType_Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttractionType_Cultural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttractionType_Monument"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttractionType_Museum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AttractionType_Park"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bilbao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cadiz"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Event5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EventType_Culture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EventType_Gastronomy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EventType_Music"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EventType_Sports"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EventType_Technology"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel1_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel2_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel3_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel4_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hotel5_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelType_Beach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelType_Business"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelType_Countryside"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelType_Luxury"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HotelType_Touristic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malaga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pamplona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant1_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant2_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant3_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant4_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Restaurant5_Rating1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantType_Italian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantType_Japanese"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantType_Mediterranean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantType_Mexican"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RestaurantType_Spanish"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SanSebastian"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sevilla"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Toledo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transport1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transport2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transport3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transport4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Transport5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportCompany_City"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportCompany_Metro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportCompany_Movi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportCompany_Trans"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportCompany_Urban"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportType_Bus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportType_Metro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportType_PublicBycicle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportType_Taxi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransportType_Tramway"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valencia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:abstract"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="widoco:introduction"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Attraction"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TourismEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#AttractionType"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AttractionRating"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Rating"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isRatingOf"/>
+                <Class IRI="#Attraction"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isRatingOf"/>
+                <Class IRI="#Attraction"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Event"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TourismEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#EventType"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Hotel"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TourismEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#HotelType"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HotelRating"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Rating"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isRatingOf"/>
+                <Class IRI="#Hotel"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isRatingOf"/>
+                <Class IRI="#Hotel"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Rating"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#DomainThing"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#ratingValue"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:decimal"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Restaurant"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TourismEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#RestaurantType"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#RestaurantRating"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Rating"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isRatingOf"/>
+                <Class IRI="#Restaurant"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#isRatingOf"/>
+                <Class IRI="#Restaurant"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#TourismEntity"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCity"/>
+            <Class IRI="#City"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Transport"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#TourismEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#TransportType"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Attraction"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attraction"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#AttractionType"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#AttractionType"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Attraction"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasRating"/>
+            <Class IRI="#AttractionRating"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttractionRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AttractionType"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CarnivalEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CastleAttraction"/>
+        <Class IRI="#Attraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CathedralAttraction"/>
+        <Class IRI="#Attraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConcertEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CongressEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DelMarHotel"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeliciaRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#EventType"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#EventType"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EventType"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FairEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FestivalEvent"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FusionRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GourmetRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#HotelType"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#HotelType"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotel"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasRating"/>
+            <Class IRI="#HotelRating"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HotelType"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MuseumAttraction"/>
+        <Class IRI="#Attraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PalaceAttraction"/>
+        <Class IRI="#Attraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PalaceHotel"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParkAttraction"/>
+        <Class IRI="#Attraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rating"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rating"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#ratingValue"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:decimal"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RatingLevel"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RatingLevelBad"/>
+        <Class IRI="#RatingLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RatingLevelGood"/>
+        <Class IRI="#RatingLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RatingLevelNormal"/>
+        <Class IRI="#RatingLevel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recommendation"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecommendedAttraction"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecommendedEvent"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecommendedHotel"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecommendedRestaurant"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecommendedTransport"/>
+        <Class IRI="#Recommendation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurant"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#RestaurantType"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#RestaurantType"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantRating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RestaurantType"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RoyalHotel"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SaborRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SolHotel"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TourismEntity"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TradicionRestaurant"/>
+        <Class IRI="#Restaurant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transport"/>
+        <Class IRI="#TourismEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transport"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#TransportType"/>
+            </ObjectSomeValuesFrom>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasType"/>
+                <Class IRI="#TransportType"/>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transport"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCompany"/>
+            <Class IRI="#TransportCompany"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportCompany"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportType"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VistaHotel"/>
+        <Class IRI="#Hotel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <ObjectUnionOf>
+            <Class IRI="#DomainThing"/>
+            <Class IRI="#ValuePartition"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Attraction"/>
+        <Class IRI="#City"/>
+        <Class IRI="#Event"/>
+        <Class IRI="#Hotel"/>
+        <Class IRI="#Restaurant"/>
+        <Class IRI="#Transport"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AttractionRating"/>
+        <Class IRI="#HotelRating"/>
+        <Class IRI="#RestaurantRating"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AttractionType"/>
+        <Class IRI="#City"/>
+        <Class IRI="#EventType"/>
+        <Class IRI="#HotelType"/>
+        <Class IRI="#RatingLevel"/>
+        <Class IRI="#Recommendation"/>
+        <Class IRI="#RestaurantType"/>
+        <Class IRI="#TransportCompany"/>
+        <Class IRI="#TransportType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CarnivalEvent"/>
+        <Class IRI="#ConcertEvent"/>
+        <Class IRI="#CongressEvent"/>
+        <Class IRI="#FairEvent"/>
+        <Class IRI="#FestivalEvent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CastleAttraction"/>
+        <Class IRI="#CathedralAttraction"/>
+        <Class IRI="#MuseumAttraction"/>
+        <Class IRI="#PalaceAttraction"/>
+        <Class IRI="#ParkAttraction"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DelMarHotel"/>
+        <Class IRI="#PalaceHotel"/>
+        <Class IRI="#RoyalHotel"/>
+        <Class IRI="#SolHotel"/>
+        <Class IRI="#VistaHotel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeliciaRestaurant"/>
+        <Class IRI="#FusionRestaurant"/>
+        <Class IRI="#GourmetRestaurant"/>
+        <Class IRI="#SaborRestaurant"/>
+        <Class IRI="#TradicionRestaurant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DomainThing"/>
+        <Class IRI="#ValuePartition"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RatingLevelBad"/>
+        <Class IRI="#RatingLevelGood"/>
+        <Class IRI="#RatingLevelNormal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RecommendedAttraction"/>
+        <Class IRI="#RecommendedEvent"/>
+        <Class IRI="#RecommendedHotel"/>
+        <Class IRI="#RecommendedRestaurant"/>
+        <Class IRI="#RecommendedTransport"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#AttractionType_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#AttractionType_Cultural"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#AttractionType_Monument"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#AttractionType_Museum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AttractionType"/>
+        <NamedIndividual IRI="#AttractionType_Park"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#EventType_Culture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#EventType_Gastronomy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#EventType_Music"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#EventType_Sports"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EventType"/>
+        <NamedIndividual IRI="#EventType_Technology"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#HotelType_Beach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#HotelType_Business"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#HotelType_Countryside"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#HotelType_Luxury"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HotelType"/>
+        <NamedIndividual IRI="#HotelType_Touristic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Malaga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantType"/>
+        <NamedIndividual IRI="#RestaurantType_Italian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantType"/>
+        <NamedIndividual IRI="#RestaurantType_Japanese"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantType"/>
+        <NamedIndividual IRI="#RestaurantType_Mediterranean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantType"/>
+        <NamedIndividual IRI="#RestaurantType_Mexican"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RestaurantType"/>
+        <NamedIndividual IRI="#RestaurantType_Spanish"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#SanSebastian"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#TransportCompany_City"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#TransportCompany_Metro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#TransportCompany_Movi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#TransportCompany_Trans"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportCompany"/>
+        <NamedIndividual IRI="#TransportCompany_Urban"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#TransportType_Bus"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#TransportType_Metro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#TransportType_PublicBycicle"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#TransportType_Taxi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TransportType"/>
+        <NamedIndividual IRI="#TransportType_Tramway"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#Barcelona"/>
+        <NamedIndividual IRI="#Bilbao"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <NamedIndividual IRI="#Malaga"/>
+        <NamedIndividual IRI="#Pamplona"/>
+        <NamedIndividual IRI="#SanSebastian"/>
+        <NamedIndividual IRI="#Sevilla"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <NamedIndividual IRI="#Valencia"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </DifferentIndividuals>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Attraction1"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Attraction1"/>
+        <NamedIndividual IRI="#Attraction1_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Attraction1"/>
+        <NamedIndividual IRI="#AttractionType_Museum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Attraction2"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Attraction2"/>
+        <NamedIndividual IRI="#Attraction2_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Attraction2"/>
+        <NamedIndividual IRI="#AttractionType_Monument"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Attraction3"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Attraction3"/>
+        <NamedIndividual IRI="#Attraction3_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Attraction3"/>
+        <NamedIndividual IRI="#AttractionType_Museum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Attraction4"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Attraction4"/>
+        <NamedIndividual IRI="#Attraction4_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Attraction4"/>
+        <NamedIndividual IRI="#AttractionType_Museum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Attraction5"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Attraction5"/>
+        <NamedIndividual IRI="#Attraction5_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Attraction5"/>
+        <NamedIndividual IRI="#AttractionType_Beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Event1"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Event1"/>
+        <NamedIndividual IRI="#EventType_Sports"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Event2"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Event2"/>
+        <NamedIndividual IRI="#EventType_Sports"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Event3"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Event3"/>
+        <NamedIndividual IRI="#EventType_Culture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Event4"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Event4"/>
+        <NamedIndividual IRI="#EventType_Music"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Event5"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Event5"/>
+        <NamedIndividual IRI="#EventType_Sports"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Hotel1"/>
+        <NamedIndividual IRI="#Sevilla"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Hotel1"/>
+        <NamedIndividual IRI="#Hotel1_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Hotel1"/>
+        <NamedIndividual IRI="#HotelType_Beach"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <NamedIndividual IRI="#Hotel2_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <NamedIndividual IRI="#HotelType_Luxury"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Hotel3"/>
+        <NamedIndividual IRI="#Malaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Hotel3"/>
+        <NamedIndividual IRI="#Hotel3_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Hotel3"/>
+        <NamedIndividual IRI="#HotelType_Touristic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Hotel4"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Hotel4"/>
+        <NamedIndividual IRI="#Hotel4_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Hotel4"/>
+        <NamedIndividual IRI="#HotelType_Touristic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Hotel5"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Hotel5"/>
+        <NamedIndividual IRI="#Hotel5_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Hotel5"/>
+        <NamedIndividual IRI="#HotelType_Luxury"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <NamedIndividual IRI="#Restaurant1_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <NamedIndividual IRI="#RestaurantType_Mexican"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Restaurant2"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Restaurant2"/>
+        <NamedIndividual IRI="#Restaurant2_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Restaurant2"/>
+        <NamedIndividual IRI="#RestaurantType_Japanese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Restaurant3"/>
+        <NamedIndividual IRI="#Valencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Restaurant3"/>
+        <NamedIndividual IRI="#Restaurant3_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Restaurant3"/>
+        <NamedIndividual IRI="#RestaurantType_Spanish"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Restaurant4"/>
+        <NamedIndividual IRI="#Malaga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Restaurant4"/>
+        <NamedIndividual IRI="#Restaurant4_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Restaurant4"/>
+        <NamedIndividual IRI="#RestaurantType_Japanese"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Restaurant5"/>
+        <NamedIndividual IRI="#Pamplona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Restaurant5"/>
+        <NamedIndividual IRI="#Restaurant5_Rating1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Restaurant5"/>
+        <NamedIndividual IRI="#RestaurantType_Mexican"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Transport1"/>
+        <NamedIndividual IRI="#Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Transport1"/>
+        <NamedIndividual IRI="#TransportCompany_Urban"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Transport1"/>
+        <NamedIndividual IRI="#TransportType_Metro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Transport2"/>
+        <NamedIndividual IRI="#Bilbao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Transport2"/>
+        <NamedIndividual IRI="#TransportCompany_Trans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Transport2"/>
+        <NamedIndividual IRI="#TransportType_Taxi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Transport3"/>
+        <NamedIndividual IRI="#Toledo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Transport3"/>
+        <NamedIndividual IRI="#TransportCompany_Trans"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Transport3"/>
+        <NamedIndividual IRI="#TransportType_Tramway"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Transport4"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Transport4"/>
+        <NamedIndividual IRI="#TransportCompany_City"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Transport4"/>
+        <NamedIndividual IRI="#TransportType_Bus"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Transport5"/>
+        <NamedIndividual IRI="#Cadiz"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCompany"/>
+        <NamedIndividual IRI="#Transport5"/>
+        <NamedIndividual IRI="#TransportCompany_Movi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasType"/>
+        <NamedIndividual IRI="#Transport5"/>
+        <NamedIndividual IRI="#TransportType_Metro"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Attraction1"/>
+        <Literal xml:lang="es">Castillo Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Attraction1_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Attraction2"/>
+        <Literal xml:lang="es">Castillo Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Attraction2_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Attraction3"/>
+        <Literal xml:lang="es">Castillo Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Attraction3_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Attraction4"/>
+        <Literal xml:lang="es">Museo Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Attraction4_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Attraction5"/>
+        <Literal xml:lang="es">Castillo Cádiz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Attraction5_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#AttractionType_Beach"/>
+        <Literal>Playa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#AttractionType_Cultural"/>
+        <Literal>Cultural</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#AttractionType_Monument"/>
+        <Literal>Monumento</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#AttractionType_Museum"/>
+        <Literal>Museo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#AttractionType_Park"/>
+        <Literal>Parque</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41.3874</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2.1686</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Barcelona"/>
+        <Literal>Barcelona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">43.2630</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Bilbao"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-2.9350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Bilbao"/>
+        <Literal>Bilbao</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36.5297</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-6.2920</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Cadiz"/>
+        <Literal>Cádiz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eventDate"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-06-02</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Event1"/>
+        <Literal xml:lang="es">Congreso Cádiz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eventDate"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-04-19</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Event2"/>
+        <Literal xml:lang="es">Carnaval Cádiz</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eventDate"/>
+        <NamedIndividual IRI="#Event3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-12-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Event3"/>
+        <Literal xml:lang="es">Congreso Bilbao</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eventDate"/>
+        <NamedIndividual IRI="#Event4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-05-08</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Event4"/>
+        <Literal xml:lang="es">Carnaval Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eventDate"/>
+        <NamedIndividual IRI="#Event5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-08-26</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Event5"/>
+        <Literal xml:lang="es">Feria Toledo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#EventType_Culture"/>
+        <Literal xml:lang="es">Cultural</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#EventType_Gastronomy"/>
+        <Literal xml:lang="es">Gastronomía</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#EventType_Music"/>
+        <Literal xml:lang="es">Música</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#EventType_Sports"/>
+        <Literal xml:lang="es">Deportivo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#EventType_Technology"/>
+        <Literal xml:lang="es">Tecnológico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Hotel1"/>
+        <Literal xml:lang="es">Hotel Vista Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nightPrice"/>
+        <NamedIndividual IRI="#Hotel1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">278</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#starRating"/>
+        <NamedIndividual IRI="#Hotel1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Hotel1_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <Literal xml:lang="es">Hotel Royal Pamplona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nightPrice"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">56</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#starRating"/>
+        <NamedIndividual IRI="#Hotel2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Hotel2_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Hotel3"/>
+        <Literal xml:lang="es">Hotel Royal Málaga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nightPrice"/>
+        <NamedIndividual IRI="#Hotel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">175</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#starRating"/>
+        <NamedIndividual IRI="#Hotel3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Hotel3_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Hotel4"/>
+        <Literal xml:lang="es">Hotel Royal Bilbao</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nightPrice"/>
+        <NamedIndividual IRI="#Hotel4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">232</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#starRating"/>
+        <NamedIndividual IRI="#Hotel4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Hotel4_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Hotel5"/>
+        <Literal xml:lang="es">Hotel Palace Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#nightPrice"/>
+        <NamedIndividual IRI="#Hotel5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">120</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#starRating"/>
+        <NamedIndividual IRI="#Hotel5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Hotel5_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#HotelType_Beach"/>
+        <Literal xml:lang="es">Playa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#HotelType_Business"/>
+        <Literal xml:lang="es">Negocios</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#HotelType_Countryside"/>
+        <Literal xml:lang="es">Rural</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#HotelType_Luxury"/>
+        <Literal xml:lang="es">Lujo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#HotelType_Touristic"/>
+        <Literal xml:lang="es">Turístico</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">40.4168</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-3.7038</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Madrid"/>
+        <Literal>Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Malaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36.7213</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Malaga"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-4.4210</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Malaga"/>
+        <Literal>Málaga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">42.8169</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Pamplona"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-1.6444</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Pamplona"/>
+        <Literal>Pamplona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averagePrice"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">46</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Restaurant1"/>
+        <Literal xml:lang="es">Restaurante Tradición Toledo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Restaurant1_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averagePrice"/>
+        <NamedIndividual IRI="#Restaurant2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">30</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Restaurant2"/>
+        <Literal xml:lang="es">Restaurante Gourmet Madrid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Restaurant2_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averagePrice"/>
+        <NamedIndividual IRI="#Restaurant3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">13</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Restaurant3"/>
+        <Literal xml:lang="es">Restaurante Fusión Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Restaurant3_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averagePrice"/>
+        <NamedIndividual IRI="#Restaurant4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Restaurant4"/>
+        <Literal xml:lang="es">Restaurante Delicia Málaga</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Restaurant4_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averagePrice"/>
+        <NamedIndividual IRI="#Restaurant5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Restaurant5"/>
+        <Literal xml:lang="es">Restaurante Delicia Pamplona</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ratingValue"/>
+        <NamedIndividual IRI="#Restaurant5_Rating1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#RestaurantType_Italian"/>
+        <Literal xml:lang="es">Cocina italiana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#RestaurantType_Japanese"/>
+        <Literal xml:lang="es">Cocina japonesa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#RestaurantType_Mediterranean"/>
+        <Literal xml:lang="es">Cocina mediterránea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#RestaurantType_Mexican"/>
+        <Literal xml:lang="es">Cocina mexicana</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#RestaurantType_Spanish"/>
+        <Literal xml:lang="es">Cocina andaluza</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#SanSebastian"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">43.3183</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#SanSebastian"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-1.9812</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#SanSebastian"/>
+        <Literal>San Sebastián</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Sevilla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">37.3886</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Sevilla"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-5.9823</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Sevilla"/>
+        <Literal>Sevilla</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39.8628</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-4.0273</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Toledo"/>
+        <Literal>Toledo</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageCost"/>
+        <NamedIndividual IRI="#Transport1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8.85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageCost"/>
+        <NamedIndividual IRI="#Transport2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.75</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageCost"/>
+        <NamedIndividual IRI="#Transport3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3.61</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageCost"/>
+        <NamedIndividual IRI="#Transport4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.79</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#averageCost"/>
+        <NamedIndividual IRI="#Transport5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.63</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TransportType_Bus"/>
+        <Literal xml:lang="es">Autobús</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TransportType_Metro"/>
+        <Literal xml:lang="es">Metro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TransportType_PublicBycicle"/>
+        <Literal xml:lang="es">Bicicleta Pública</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TransportType_Taxi"/>
+        <Literal xml:lang="es">Taxi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#TransportType_Tramway"/>
+        <Literal xml:lang="es">Tranvía</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">39.4699</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Valencia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.3763</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Valencia"/>
+        <Literal>Valencia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#latitude"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">41.6488</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#longitude"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.8891</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Zaragoza"/>
+        <Literal>Zaragoza</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCompany"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRating"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasType"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRatingOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRating"/>
+        <ObjectProperty IRI="#isRatingOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isRatingOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRating"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#TourismEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompany"/>
+        <Class IRI="#Transport"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#TourismEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasType"/>
+        <Class IRI="#TourismEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompany"/>
+        <Class IRI="#TransportCompany"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#Rating"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#averageCost"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#averagePrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#eventDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#latitude"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#longitude"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nightPrice"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ratingValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#starRating"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#averageCost"/>
+        <Class IRI="#Transport"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#averagePrice"/>
+        <Class IRI="#Restaurant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eventDate"/>
+        <Class IRI="#Event"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#latitude"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#longitude"/>
+        <Class IRI="#City"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#DomainThing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#nightPrice"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ratingValue"/>
+        <Class IRI="#Rating"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#starRating"/>
+        <Class IRI="#Hotel"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#averageCost"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#averagePrice"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#eventDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#latitude"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#longitude"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nightPrice"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ratingValue"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:decimal"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#starRating"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedAttraction_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Attraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RatingLevelGood"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedAttraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AttractionSubtype_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Attraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Castillo</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#CastleAttraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AttractionSubtype_R3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Attraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Catedral</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#CathedralAttraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AttractionSubtype_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Attraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Museo</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#MuseumAttraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AttractionSubtype_R4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Attraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Palacio</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#PalaceAttraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>AttractionSubtype_R5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Attraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/a"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Parque</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ParkAttraction"/>
+                <Variable IRI="/a"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedEvent_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCity"/>
+                <Variable IRI="/e"/>
+                <NamedIndividual IRI="#Cadiz"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasType"/>
+                <Variable IRI="/e"/>
+                <NamedIndividual IRI="#EventType_Sports"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedEvent"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedEvent_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasCity"/>
+                <Variable IRI="/e"/>
+                <NamedIndividual IRI="#Toledo"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedEvent"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EventSubtype_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Carnaval</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#CarnivalEvent"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EventSubtype_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Concierto</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#ConcertEvent"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EventSubtype_R3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Congreso</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#CongressEvent"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EventSubtype_R4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Feria</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#FairEvent"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>EventSubtype_R5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Event"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/e"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Festival</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#FestivalEvent"/>
+                <Variable IRI="/e"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedHotel_R3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#starRating"/>
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RatingLevelGood"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedHotel_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#starRating"/>
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RatingLevelGood"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedHotel_R4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#starRating"/>
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RatingLevelNormal"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#nightPrice"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/np"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/np"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedHotel_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#starRating"/>
+                <Variable IRI="/h"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </DataPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RatingLevelNormal"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedHotel_R5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasType"/>
+                <Variable IRI="/h"/>
+                <NamedIndividual IRI="#HotelType_Luxury"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>HotelSubtype_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Del Mar</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#DelMarHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>HotelSubtype_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Palace</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#PalaceHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>HotelSubtype_R3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Royal</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RoyalHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>HotelSubtype_R4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Sol</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SolHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>HotelSubtype_R5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Hotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/h"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Vista</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#VistaHotel"/>
+                <Variable IRI="/h"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RatingLevel_R3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Rating"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ratingValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RatingLevelBad"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RatingLevel_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Rating"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ratingValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RatingLevelNormal"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RatingLevel_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Rating"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ratingValue"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/v"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="/v"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RatingLevelGood"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedRestaurant_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/rt"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RatingLevelGood"/>
+                <Variable IRI="/rt"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedRestaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedRestaurant_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasRating"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/rt"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RatingLevelNormal"/>
+                <Variable IRI="/rt"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#averagePrice"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/p"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/p"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedRestaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RestaurantSubtype_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Delicia</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#DeliciaRestaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RestaurantSubtype_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Fusion</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#FusionRestaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RestaurantSubtype_R3</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Gourmet</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#GourmetRestaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RestaurantSubtype_R4</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Sabor</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#SaborRestaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RestaurantSubtype_R5</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Restaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#name"/>
+                <Variable IRI="/r"/>
+                <Variable IRI="/n"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#contains">
+                <Variable IRI="/n"/>
+                <Literal>Tradicion</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#TradicionRestaurant"/>
+                <Variable IRI="/r"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedTransport_R1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transport"/>
+                <Variable IRI="/t"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#hasType"/>
+                <Variable IRI="/t"/>
+                <NamedIndividual IRI="#TransportType_Bus"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedTransport"/>
+                <Variable IRI="/t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>RecommendedTransport_R2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Transport"/>
+                <Variable IRI="/t"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#averageCost"/>
+                <Variable IRI="/t"/>
+                <Variable IRI="/c"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="/c"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#RecommendedTransport"/>
+                <Variable IRI="/t"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Attraction</IRI>
+        <Literal xml:lang="en">An attraction is a specific location that tourists may find interesting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Attraction</IRI>
+        <Literal>https://schema.org/TouristAttraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Attraction</IRI>
+        <Literal xml:lang="en">Attraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Attraction</IRI>
+        <Literal>https://dbpedia.org/page/Point_of_interest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AttractionRating</IRI>
+        <Literal xml:lang="en">This class represents a numeric rating given to an attraction (point of interest) instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AttractionRating</IRI>
+        <Literal xml:lang="en">AttractionRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AttractionType</IRI>
+        <Literal xml:lang="en">An AttractionType defines a kind of tourism attraction (point of interest) with unique characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AttractionType</IRI>
+        <Literal xml:lang="en">AttractionType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Barcelona</IRI>
+        <Literal xml:lang="en">Barcelona (/ˌbɑːrsəˈloʊnə/ BAR-sə-LOH-nə, Catalan: [bəɾsəˈlonə], Spanish: [baɾθeˈlona]) is a city on the coast of northeastern Spain. It is the capital and largest city of the autonomous community of Catalonia, as well as the second most populous municipality of Spain. With a population of 1.6 million within city limits, its urban area extends to numerous neighbouring municipalities within the Province of Barcelona and is home to around 4.8 million people, making it the fifth most populous urban area in the European Union after Paris, the Ruhr area, Madrid, and Milan. It is one of the largest metropolises on the Mediterranean Sea, located on the coast between the mouths of the rivers Llobregat and Besòs, and bounded to the west by the Serra de Collserola mountain range, the tallest peak of which is 512 metres (1,680 feet) high.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Barcelona</IRI>
+        <Literal>Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Barcelona</IRI>
+        <Literal>https://dbpedia.org/page/Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bilbao</IRI>
+        <Literal xml:lang="en">Bilbao (/bɪlˈbaʊ, -ˈbɑːoʊ/, also US: /-ˈbeɪoʊ/, Spanish: [bilˈβao]; Basque: Bilbo [bilβo]) is a city in northern Spain, the largest city in the province of Biscay and in the Basque Country as a whole. It is also the largest city proper in northern Spain. Bilbao is the tenth largest city in Spain, with a population of 345,141 as of 2015. The Bilbao metropolitan area has 1,037,847 inhabitants, making it one of the most populous metropolitan areas in northern Spain; with a population of 875,552 the comarca of Greater Bilbao is the fifth-largest urban area in Spain. Bilbao is also the main urban area in what is defined as the Greater Basque region. Bilbao is located in the north-central part of Spain, some 16 kilometres (10 mi) south of the Bay of Biscay, where the economic social development is located, where the estuary of Bilbao is formed. Its main urban core is surrounded by two small mountain ranges with an average elevation of 400 metres (1,300 ft).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Bilbao</IRI>
+        <Literal>Bilbao</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Bilbao</IRI>
+        <Literal>https://dbpedia.org/page/Bilbao</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cadiz</IRI>
+        <Literal>Cádiz (/kəˈdɪz/, US also /ˈkeɪdɪz, ˈkæd-, ˈkɑːd-/, Spanish: [ˈkaðiθ]) is a city and port in southwestern Spain. It is the capital of the Province of Cádiz, one of eight that make up the autonomous community of Andalusia. Cádiz, one of the oldest continuously inhabited cities in Western Europe, with archaeological remains dating to the 12th century BC, was founded by the Phoenicians. In the 18th century, the Port in the Bay of Cádiz consolidated as the main harbor of mainland Spain, enjoying the virtual monopoly of trade with the Americas until 1778. It is also the site of the University of Cádiz. Situated on a narrow slice of land surrounded by the sea‚ Cádiz is, in most respects, a typically Andalusian city with well-preserved historical landmarks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cadiz</IRI>
+        <Literal>Cadiz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Cadiz</IRI>
+        <Literal>https://dbpedia.org/page/C%C3%A1diz</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CarnivalEvent</IRI>
+        <Literal xml:lang="en">Carnival is an event that typically involves public celebrations, including events such as parades, public street parties and other entertainments, combining some elements of a circus.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CarnivalEvent</IRI>
+        <Literal xml:lang="en">CarnivalEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#CarnivalEvent</IRI>
+        <Literal>https://dbpedia.org/page/Carnival</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CastleAttraction</IRI>
+        <Literal xml:lang="en">A castle is a type of fortified structure built during the Middle Ages predominantly by the nobility or royalty and by military orders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CastleAttraction</IRI>
+        <Literal xml:lang="en">CastleAttraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#CastleAttraction</IRI>
+        <Literal>https://dbpedia.org/ontology/Castle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CathedralAttraction</IRI>
+        <Literal xml:lang="en">A cathedral is a church that contains the cathedra (Latin for &apos;seat&apos;) of a bishop, thus serving as the central church of a diocese, conference, or episcopate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CathedralAttraction</IRI>
+        <Literal xml:lang="en">CathedralAttraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#CathedralAttraction</IRI>
+        <Literal>https://dbpedia.org/page/Cathedral</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#City</IRI>
+        <Literal xml:lang="en">A relatively large and permanent settlement, particularly a large urban settlement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#City</IRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#City</IRI>
+        <Literal>https://dbpedia.org/ontology/City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConcertEvent</IRI>
+        <Literal xml:lang="en">A concert is a live music performance in front of an audience. The performance may be by a single musician, sometimes then called a recital, or by a musical ensemble, such as an orchestra, choir, or band.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConcertEvent</IRI>
+        <Literal xml:lang="en">ConcertEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#ConcertEvent</IRI>
+        <Literal>https://dbpedia.org/page/Concert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CongressEvent</IRI>
+        <Literal xml:lang="en">A congress is a formal meeting of the representatives of different countries, constituent states, organizations, trade unions, political parties, or other groups.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CongressEvent</IRI>
+        <Literal xml:lang="en">CongressEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#CongressEvent</IRI>
+        <Literal>https://dbpedia.org/page/Congress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DelMarHotel</IRI>
+        <Literal xml:lang="en">DelMarHotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DeliciaRestaurant</IRI>
+        <Literal xml:lang="en">DeliciaRestaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en">An event is any activity that is planned for a special purpose and usually involves a lot of people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Event</IRI>
+        <Literal>https://schema.org/Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal>Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Event</IRI>
+        <Literal>https://dbpedia.org/ontology/Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EventType</IRI>
+        <Literal xml:lang="en">A kind of event with unique characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EventType</IRI>
+        <Literal xml:lang="en">EventType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FairEvent</IRI>
+        <Literal xml:lang="en">A fair (archaic: faire or fayre) is a gathering of people for a variety of entertainment or commercial activities. Fairs are typically temporary with scheduled times lasting from an afternoon to several weeks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FairEvent</IRI>
+        <Literal xml:lang="en">FairEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#FairEvent</IRI>
+        <Literal>https://dbpedia.org/page/Fair</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FestivalEvent</IRI>
+        <Literal xml:lang="en">A festival is an event ordinarily celebrated by a community and centering on some characteristic aspect or aspects of that community and its religion or cultures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FestivalEvent</IRI>
+        <Literal xml:lang="en">FestivalEvent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#FestivalEvent</IRI>
+        <Literal>https://dbpedia.org/page/Festival</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FusionRestaurant</IRI>
+        <Literal xml:lang="en">FusionRestaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GourmetRestaurant</IRI>
+        <Literal xml:lang="en">GourmetRestaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Hotel</IRI>
+        <Literal xml:lang="en">A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator and other kitchen facilities, upholstered chairs, a flat screen television, and en-suite bathrooms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Hotel</IRI>
+        <Literal>https://schema.org/Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hotel</IRI>
+        <Literal xml:lang="en">Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Hotel</IRI>
+        <Literal>https://dbpedia.org/ontology/Hotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelRating</IRI>
+        <Literal xml:lang="en">This class represents a numeric rating given to a hotel instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelRating</IRI>
+        <Literal xml:lang="en">HotelRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HotelType</IRI>
+        <Literal xml:lang="en">A kind of hotel with unique characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HotelType</IRI>
+        <Literal xml:lang="en">HotelType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Madrid</IRI>
+        <Literal xml:lang="en">Madrid (/məˈdrɪd/ mə-DRID, Spanish: [maˈðɾið]) is the capital and most populous city of Spain. The city has almost 3.4 million inhabitants and a metropolitan area population of approximately 6.7 million. It is the second-largest city in the European Union (EU), and its monocentric metropolitan area is the third-largest in the EU. The municipality covers 604.3 km2 (233.3 sq mi) geographical area. Madrid lies on the River Manzanares in the central part of the Iberian Peninsula. Capital city of both Spain (almost without interruption since 1561) and the surrounding autonomous community of Madrid (since 1983), it is also the political, economic and cultural centre of the country. The city is situated on an elevated plain about 300 km (190 mi) from the closest seaside location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Madrid</IRI>
+        <Literal>Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Madrid</IRI>
+        <Literal>https://dbpedia.org/page/Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Malaga</IRI>
+        <Literal xml:lang="en">Málaga (/mæləɡə/, Spanish: [ˈmalaɣa]) is a municipality of Spain, capital of the Province of Málaga, in the autonomous community of Andalusia. With a population of 578,460 in 2020, it is the second-most populous city in Andalusia after Seville and the sixth most populous in Spain. It lies on the Costa del Sol (Coast of the Sun) of the Mediterranean, about 100 kilometres (62.14 miles) east of the Strait of Gibraltar and about 130 km (80.78 mi) north of Africa. Málaga&apos;s history spans about 2,800 years, making it one of the oldest cities in Europe and one of the oldest continuously inhabited cities in the world.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Malaga</IRI>
+        <Literal>Malaga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Malaga</IRI>
+        <Literal>https://dbpedia.org/page/M%C3%A1laga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MuseumAttraction</IRI>
+        <Literal xml:lang="en">A museum (/mjuːˈziːəm/ mew-ZEE-əm; plural museums or, rarely, musea) is a building or institution that cares for and displays a collection of artifacts and other objects of artistic, cultural, historical, or scientific importance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MuseumAttraction</IRI>
+        <Literal xml:lang="en">MuseumAttraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#MuseumAttraction</IRI>
+        <Literal>https://dbpedia.org/ontology/Museum</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PalaceAttraction</IRI>
+        <Literal xml:lang="en">A palace is a grand residence, especially a royal residence, or the home of a head of state or some other high-ranking dignitary, such as a bishop or archbishop.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PalaceAttraction</IRI>
+        <Literal xml:lang="en">PalaceAttraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#PalaceAttraction</IRI>
+        <Literal>https://dbpedia.org/page/Palace</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PalaceHotel</IRI>
+        <Literal xml:lang="en">PalaceHotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pamplona</IRI>
+        <Literal xml:lang="en">Pamplona (Spanish: [pamˈplona]; Basque: Iruña [iɾuɲa] or Iruñea [iɾuɲe.a]), historically also known as Pampeluna in English, is the capital city of the Chartered Community of Navarre, in Spain. It is also the third-largest city in the greater Basque cultural region. Lying at near 450 m (1,480 ft) above sea level, the city (and the wider Cuenca de Pamplona) is located on the flood plain of the Arga river, a second-order tributary of the Ebro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Pamplona</IRI>
+        <Literal>Pamplona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Pamplona</IRI>
+        <Literal>https://dbpedia.org/page/Pamplona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParkAttraction</IRI>
+        <Literal xml:lang="en">A park is an area of natural, semi-natural or planted space set aside for human enjoyment and recreation or for the protection of wildlife or natural habitats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParkAttraction</IRI>
+        <Literal xml:lang="en">ParkAttraction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#ParkAttraction</IRI>
+        <Literal>https://dbpedia.org/ontology/Park</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rating</IRI>
+        <Literal xml:lang="en">This class is equivalent to anything that is given a numeric rating value between 0 and 5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rating</IRI>
+        <Literal xml:lang="en">Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatingLevel</IRI>
+        <Literal xml:lang="en">A RatingLevel acts as a superclass of the different rating levels for the defined tourism entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RatingLevel</IRI>
+        <Literal xml:lang="en">RatingLevel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatingLevelBad</IRI>
+        <Literal xml:lang="en">This class represents the set of ratings given to defined tourism entities whose numeric value is between 0 and 2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RatingLevelBad</IRI>
+        <Literal xml:lang="en">RatingLevelBad</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatingLevelGood</IRI>
+        <Literal xml:lang="en">This class represents the set of ratings given to defined tourism entities whose numeric value is between 4 and 5.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RatingLevelGood</IRI>
+        <Literal xml:lang="en">RatingLevelGood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatingLevelNormal</IRI>
+        <Literal xml:lang="en">This class represents the set of ratings given to defined tourism entities whose numeric value is between 2 and 4.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RatingLevelNormal</IRI>
+        <Literal xml:lang="en">RatingLevelNormal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Restaurant</IRI>
+        <Literal xml:lang="en">A restaurant is a business that prepares and serves food and drinks to customers. Meals are generally served and eaten on the premises, but many restaurants also offer take-out and food delivery services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Restaurant</IRI>
+        <Literal>https://schema.org/Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Restaurant</IRI>
+        <Literal xml:lang="en">Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Restaurant</IRI>
+        <Literal>https://dbpedia.org/ontology/Restaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantRating</IRI>
+        <Literal xml:lang="en">This class represents a numeric rating given to a restaurant instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantRating</IRI>
+        <Literal xml:lang="en">RestaurantRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantType</IRI>
+        <Literal xml:lang="en">A restaurant with a specific cuisine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantType</IRI>
+        <Literal xml:lang="en">RestaurantType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantType_Italian</IRI>
+        <Literal xml:lang="en">Italian cuisine (Italian: Cucina italiana, pronounced [kuˈtʃiːna itaˈljaːna]) is a Mediterranean cuisine consisting of the ingredients, recipes and cooking techniques developed across the Italian Peninsula since antiquity, and later spread around the world together with waves of Italian diaspora. Significant changes occurred with the colonization of the Americas and the introduction of potatoes, tomatoes, capsicums, maize and sugar beet — the latter introduced in quantity in the 18th century. It is one of the best-known and most appreciated gastronomies worldwide. Italian cuisine includes deeply rooted traditions common to the whole country, as well as all the regional gastronomies, different from each other, especially between the north, the centre and the south of Italy, which are in continuous exchange.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantType_Italian</IRI>
+        <Literal>RestaurantType_Italian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#RestaurantType_Italian</IRI>
+        <Literal>https://dbpedia.org/page/Italian_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantType_Japanese</IRI>
+        <Literal xml:lang="en">Japanese cuisine encompasses the regional and traditional foods of Japan, which have developed through centuries of political, economic, and social changes. The traditional cuisine of Japan (Japanese: washoku) is based on rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often consist of fish, pickled vegetables, and vegetables cooked in broth. Seafood is common, often grilled, but also served raw as sashimi or in sushi. Seafood and vegetables are also deep-fried in a light batter, as tempura. Apart from rice, a staple includes noodles, such as soba and udon. Japan also has many simmered dishes, such as fish products in broth called oden, or beef in sukiyaki and nikujaga.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantType_Japanese</IRI>
+        <Literal>RestaurantType_Japanese</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#RestaurantType_Japanese</IRI>
+        <Literal>https://dbpedia.org/page/Japanese_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantType_Mediterranean</IRI>
+        <Literal xml:lang="en">Mediterranean cuisine is the food and methods of preparation used by the people of the Mediterranean Basin. The idea of a Mediterranean cuisine originates with the cookery writer Elizabeth David&apos;s book, A Book of Mediterranean Food (1950) and was amplified by other writers working in English. Many writers define the three core elements of the cuisine as the olive, wheat, and the grape, yielding olive oil, bread and pasta, and wine; other writers deny that the widely varied foods of the Mediterranean basin constitute a cuisine at all. A common definition of the geographical area covered, proposed by David, follows the distribution of the olive tree. The region spans a wide variety of cultures with distinct cuisines, in particular (going anticlockwise around the region) the Maghrebi, Egyptian, Levantine, Ottoman (Turkish), Greek, Italian, French (Provençal), and Spanish, though some authors include additional cuisines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantType_Mediterranean</IRI>
+        <Literal>RestaurantType_Mediterranean</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#RestaurantType_Mediterranean</IRI>
+        <Literal>https://dbpedia.org/page/Mediterranean_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantType_Mexican</IRI>
+        <Literal xml:lang="en">Mexican cuisine consists of the cooking cuisines and traditions of the modern country of Mexico. Its earliest roots lie in Mesoamerican cuisine. Its ingredients and methods begin with the first agricultural communities such as the Olmec and Maya who domesticated maize, created the standard process of maize nixtamalization, and established their foodways. Successive waves of other Mesoamerican groups brought with them their own cooking methods. These included: the Teotihuacanos, Toltec, Huastec, Zapotec, Mixtec, Otomi, Purépecha, Totonac, Mazatec, Mazahua, and Nahua. With the Mexica formation of the multi-ethnic Triple Alliance (Aztec Empire), culinary foodways became infused (Aztec cuisine). Today&apos;s food staples native to the land include corn (maize), turkey, beans, squash, amaranth, chia, avocados, tomatoes, tomatillos, cacao, vanilla, agave, spirulina, sweet potato, cactus, and chili pepper.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantType_Mexican</IRI>
+        <Literal>RestaurantType_Mexican</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#RestaurantType_Mexican</IRI>
+        <Literal>https://dbpedia.org/page/Mexican_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RestaurantType_Spanish</IRI>
+        <Literal xml:lang="en">Spanish cuisine consists of the cooking traditions and practices from Spain. Olive oil (of which Spain is the world&apos;s largest producer) is heavily used in Spanish cuisine. It forms the base of many vegetable sauces (known in Spanish as sofritos). Herbs most commonly used include parsley, oregano, rosemary and thyme. The use of garlic has been noted as common in Spanish cooking. The most used meats in Spanish cuisine include chicken, pork, lamb and veal. Fish and seafood are also consumed on a regular basis. Tapas are snacks and appetizers commonly served with drinks in bars and cafes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RestaurantType_Spanish</IRI>
+        <Literal>RestaurantType_Spanish</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#RestaurantType_Spanish</IRI>
+        <Literal>https://dbpedia.org/page/Spanish_cuisine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RoyalHotel</IRI>
+        <Literal xml:lang="en">RoyalHotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SaborRestaurant</IRI>
+        <Literal xml:lang="en">SaborRestaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SanSebastian</IRI>
+        <Literal xml:lang="en">San Sebastian, officially known as Donostia–San Sebastián (names in both local languages: Donostia (Basque pronunciation: [doˈnos̺tia]) and San Sebastián (Spanish: [san seβasˈtjan])) is a city and municipality located in the Basque Autonomous Community, Spain. It lies on the coast of the Bay of Biscay, 20 km (12 miles) from the France–Spain border. The capital city of the province of Gipuzkoa, the municipality&apos;s population is 188,102 as of 2021, with its metropolitan area reaching 436,500 in 2010.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SanSebastian</IRI>
+        <Literal>SanSebastian</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#SanSebastian</IRI>
+        <Literal>https://dbpedia.org/page/San_Sebasti%C3%A1n</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sevilla</IRI>
+        <Literal xml:lang="en">Seville (/səˈvɪl/; Spanish: Sevilla, pronounced [seˈβiʎa]) is the capital and largest city of the Spanish autonomous community of Andalusia and the province of Seville. It is situated on the lower reaches of the River Guadalquivir, in the southwest of the Iberian Peninsula. Seville has a municipal population of about 685,000 as of 2021, and a metropolitan population of about 1.5 million, making it the largest city in Andalusia, the fourth-largest city in Spain and the 26th most populous municipality in the European Union. Its old town, with an area of 4 square kilometres (2 sq mi), contains three UNESCO World Heritage Sites: the Alcázar palace complex, the Cathedral and the General Archive of the Indies. The Seville harbour, located about 80 kilometres (50 miles) from the Atlantic Ocean, is the only river port in Spain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Sevilla</IRI>
+        <Literal>Sevilla</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Sevilla</IRI>
+        <Literal>https://dbpedia.org/page/Seville</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SolHotel</IRI>
+        <Literal xml:lang="en">SolHotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Toledo</IRI>
+        <Literal xml:lang="en">Toledo (UK: /tɒˈleɪdoʊ/ tol-AY-doh, Spanish: [toˈleðo]) is a city and municipality of Spain, capital of the province of Toledo and the de jure seat of the government and parliament of the autonomous community of Castilla–La Mancha. Toledo was declared a World Heritage Site by UNESCO in 1986 for its extensive monumental and cultural heritage. Located on the banks of the Tagus in central Iberia, Toledo is known as the &quot;City of the Three Cultures&quot; for the cultural influences of Christians, Muslims, and Jews throughout its history. It was the capital, from 542 to 725 CE, of the Visigothic kingdom, which followed the fall of the Roman Empire.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Toledo</IRI>
+        <Literal>Toledo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Toledo</IRI>
+        <Literal>https://dbpedia.org/page/Toledo,_Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TourismEntity</IRI>
+        <Literal xml:lang="en">The class TourismEntity acts as a superclass for any kind of activity, event, place of interest or transportation medium that is subject to recommendation for tourists.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TourismEntity</IRI>
+        <Literal xml:lang="en">TourismEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TradicionRestaurant</IRI>
+        <Literal xml:lang="en">TradicionRestaurant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Transport</IRI>
+        <Literal xml:lang="en">Transport (in British English), or transportation (in American English), is the intentional movement of humans, animals, and goods from one location to another. Modes of transport include air, land (rail and road), water, cable, pipeline, and space.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transport</IRI>
+        <Literal xml:lang="en">Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Transport</IRI>
+        <Literal>https://dbpedia.org/page/Transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Transport</IRI>
+        <Literal>https://schema.org/TravelAction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Transport</IRI>
+        <Literal>https://schema.org/Vehicle</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportCompany</IRI>
+        <Literal xml:lang="en">A transport company is a legal entity representing a legal association of people, dedicated to the transportation of people within a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportCompany</IRI>
+        <Literal xml:lang="en">TransportCompany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportType</IRI>
+        <Literal xml:lang="en">A kind of transport with unique characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportType</IRI>
+        <Literal xml:lang="en">TransportType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportType_Bus</IRI>
+        <Literal xml:lang="en">A bus (contracted from omnibus, with variants multibus, motorbus, autobus, etc.) is a road vehicle that carries significantly more passengers than an average car or van. It is most commonly used in public transport, but is also in use for charter purposes, or through private ownership. Although the average bus carries between 30 and 100 passengers, some buses have a capacity of up to 300 passengers. The most common type is the single-deck rigid bus, with double-decker and articulated buses carrying larger loads, and midibuses and minibuses carrying smaller loads. Coaches are used for longer-distance services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TransportType_Bus</IRI>
+        <Literal>https://dbpedia.org/page/Bus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportType_Metro</IRI>
+        <Literal xml:lang="en">Rapid transit or mass rapid transit (MRT), also known as heavy rail or metro, is a type of high-capacity public transport generally found in urban areas. A rapid transit system that primarily or traditionally runs below the surface may be called a subway, tube, or underground. Unlike buses or trams, rapid transit systems are railways (usually electric) that operate on an exclusive right-of-way, which cannot be accessed by pedestrians or other vehicles, and which is often grade-separated in tunnels or on elevated railways. Modern services on rapid transit systems are provided on designated lines between stations typically using electric multiple units on rail tracks, although some systems use guided rubber tires, magnetic levitation (maglev), or monorail.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TransportType_Metro</IRI>
+        <Literal>https://dbpedia.org/page/Rapid_transit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportType_PublicBycicle</IRI>
+        <Literal xml:lang="en">A bicycle-sharing system, bike share program, public bicycle scheme, or public bike share (PBS) scheme, is a shared transport service where bicycles are available for shared use by individuals at low cost. The programmes themselves include both docking and dockless systems, where docking systems allow users to rent a bike from a dock, i.e., a technology-enabled bicycle rack and return at another node or dock within the system — and dockless systems, which offer a node-free system relying on smart technology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TransportType_PublicBycicle</IRI>
+        <Literal>https://dbpedia.org/page/Bicycle-sharing_system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportType_Taxi</IRI>
+        <Literal xml:lang="en">A taxi, also known as a taxicab or simply a cab, is a type of vehicle for hire with a driver, used by a single passenger or small group of passengers, often for a non-shared ride. A taxicab conveys passengers between locations of their choice. This differs from public transport where the pick-up and drop-off locations are decided by the service provider, not by the customers, although demand responsive transport and share taxis provide a hybrid bus/taxi mode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TransportType_Taxi</IRI>
+        <Literal>https://dbpedia.org/page/Taxi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportType_Tramway</IRI>
+        <Literal xml:lang="en">A tram (called a streetcar or trolley in North America) is a rail vehicle that travels on tramway tracks on public urban streets; some include segments on segregated right-of-way. The tramlines or networks operated as public transport are called tramways or simply trams/streetcars. Many recently built tramways use the contemporary term light rail. The vehicles are called streetcars or trolleys (not to be confused with trolleybus) in North America and trams or tramcars elsewhere.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#TransportType_Tramway</IRI>
+        <Literal>https://dbpedia.org/page/Tram</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Valencia</IRI>
+        <Literal xml:lang="en">Valencia (Valencian: València) is the capital of the autonomous community of Valencia and the third-most populated municipality in Spain, with 791,413 inhabitants. It is also the capital of the province of the same name. The wider urban area also comprising the neighbouring municipalities has a population of around 1.6 million, constituting one of the major urban areas on the European side of the Mediterranean Sea. It is located on the banks of the Turia, on the east coast of the Iberian Peninsula, at the Gulf of Valencia, north of the Albufera lagoon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Valencia</IRI>
+        <Literal>Valencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Valencia</IRI>
+        <Literal>https://dbpedia.org/page/Valencia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#VistaHotel</IRI>
+        <Literal xml:lang="en">VistaHotel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Zaragoza</IRI>
+        <Literal xml:lang="en">Zaragoza, also known in English as Saragossa, is the capital city of the Zaragoza Province and of the autonomous community of Aragon, Spain. It lies by the Ebro river and its tributaries, the Huerva and the Gállego, roughly in the center of both Aragon and the Ebro basin. On 1 January 2021 the population of the municipality of Zaragoza was 675,301, (the fifth most populated in Spain) on a land area of 973.78 square kilometres (375.98 square miles).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Zaragoza</IRI>
+        <Literal>Zaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Zaragoza</IRI>
+        <Literal>https://dbpedia.org/page/Zaragoza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#averagePrice</IRI>
+        <Literal xml:lang="en">Describes the average monetary cost for any suitable domain entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#averagePrice</IRI>
+        <Literal xml:lang="en">averageCost</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eventDate</IRI>
+        <Literal xml:lang="en">Describes the date of an event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#eventDate</IRI>
+        <Literal xml:lang="en">eventDate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCity</IRI>
+        <Literal xml:lang="en">This property relates tourism entities with the cities that they are held or found in.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCity</IRI>
+        <Literal xml:lang="en">hasCity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCompany</IRI>
+        <Literal xml:lang="en">This property relates a transport entity to its transport company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCompany</IRI>
+        <Literal xml:lang="en">hasCompany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRating</IRI>
+        <Literal xml:lang="en">This property relates a tourism entity with its corresponding rating.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRating</IRI>
+        <Literal xml:lang="en">hasRating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasType</IRI>
+        <Literal xml:lang="en">This property relates a tourism entity with the type that it belongs to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasType</IRI>
+        <Literal xml:lang="en">hasType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isRatingOf</IRI>
+        <Literal xml:lang="en">This property relates a numeric rating given to a tourism entity to its corresponding entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRatingOf</IRI>
+        <Literal xml:lang="en">isRatingOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#latitude</IRI>
+        <Literal>http://www.w3.org/2003/01/geo/wgs84_pos#lat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#latitude</IRI>
+        <Literal xml:lang="en">latitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#longitude</IRI>
+        <Literal>http://www.w3.org/2003/01/geo/wgs84_pos#lon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#longitude</IRI>
+        <Literal xml:lang="en">longitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en">Describes the human-readable name given to an entity instance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nightPrice</IRI>
+        <Literal xml:lang="en">Describes the cost per night of any suitable entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#nightPrice</IRI>
+        <Literal xml:lang="en">nightPrice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ratingValue</IRI>
+        <Literal xml:lang="en">Numeric value of a rating given to any suitable entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ratingValue</IRI>
+        <Literal xml:lang="en">ratingValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#starRating</IRI>
+        <Literal xml:lang="en">Numeric value for the assigned stars of a hotel. Hotel ratings are often used to classify hotels according to their quality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#starRating</IRI>
+        <Literal xml:lang="en">starRating</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
